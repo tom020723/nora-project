@@ -1,5 +1,14 @@
 # Academic Project Page Template
 
+## NORA language pages
+
+- `index.html`: Korean (default landing page).
+- `index.en.html`: English.
+- Use the language menu at the top right to switch between pages.
+- Edit each HTML file separately when updating translated text. Keep section IDs consistent between the two files.
+- Both pages share `static/css/index.css`, `static/js/index.js`, and the same media assets under `static/`.
+- GitHub Pages serves `index.html` by default; no redirect or build step is needed.
+
 > **Update (September 2025)**: This template has been modernized with better design, SEO, and mobile support. For the original version, see the [original-version branch](https://github.com/eliahuhorwitz/Academic-project-page-template/tree/original-version).
 
 A clean, responsive template for academic project pages.

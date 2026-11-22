@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <!-- TODO: Replace with your paper title and author names -->
+  <meta name="title" content="NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO">
+  <!-- TODO: Write a compelling 150-160 character description of your research -->
+  <meta name="description" content="NORA explores reinforcement learning for autonomous driving in a SUMO environment inspired by Nohyeong, Jeju.">
+  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
+  <!-- TODO: List all authors -->
+  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <link rel="alternate" hreflang="ko" href="index.html">
+  <link rel="alternate" hreflang="en" href="index.en.html">
+  <link rel="alternate" hreflang="x-default" href="index.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <!-- TODO: Replace with your institution or lab name -->
+  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
+  <!-- TODO: Same as paper title above -->
+  <meta property="og:title" content="NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO">
+  <!-- TODO: Same as description above -->
+  <meta property="og:description" content="NORA explores reinforcement learning for autonomous driving in a SUMO environment inspired by Nohyeong, Jeju.">
+  <!-- TODO: Replace with your actual website URL -->
+  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+  <!-- TODO: Create a 1200x630px preview image and update path -->
+  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO - Research Preview">
+  <meta property="article:published_time" content="2026">
+  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="KEYWORD1">
+  <meta property="article:tag" content="KEYWORD2">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- TODO: Replace with your lab/institution Twitter handle -->
+  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+  <!-- TODO: Replace with first author's Twitter handle -->
+  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
+  <!-- TODO: Same as paper title above -->
+  <meta name="twitter:title" content="NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO">
+  <!-- TODO: Same as description above -->
+  <meta name="twitter:description" content="NORA explores reinforcement learning for autonomous driving in a SUMO environment inspired by Nohyeong, Jeju.">
+  <!-- TODO: Same as social preview image above -->
+  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO - Research Preview">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO">
+  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
+  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="CONFERENCE_NAME">
+  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO</title>
+  
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO",
+    "description": "NORA explores reinforcement learning for autonomous driving in a SUMO environment inspired by Nohyeong, Jeju.",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "FIRST_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "SECOND_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      }
+    ],
+    "datePublished": "2026",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CONFERENCE_OR_JOURNAL_NAME"
+    },
+    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
+    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
+    "abstract": "FULL_ABSTRACT_TEXT_HERE",
+    "citation": "BIBTEX_CITATION_HERE",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "RESEARCH_AREA_1"
+      },
+      {
+        "@type": "Thing", 
+        "name": "RESEARCH_AREA_2"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "INSTITUTION_OR_LAB_NAME",
+    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "sameAs": [
+      "https://twitter.com/YOUR_TWITTER_HANDLE",
+      "https://github.com/YOUR_GITHUB_USERNAME"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Language navigation shared by the two standalone pages -->
+  <nav class="language-switcher" aria-label="Language selection">
+    <details>
+      <summary><i class="fas fa-language" aria-hidden="true"></i> Language / 언어</summary>
+      <div class="language-options">
+        <a href="index.html" lang="ko" hreflang="ko">한국어</a>
+        <a href="index.en.html" lang="en" hreflang="en" aria-current="page">English</a>
+      </div>
+    </details>
+  </nav>
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- TODO: Replace with your authors and their personal links -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,
+              </span>
+              <span class="author-block">
+                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,
+              </span>
+              <span class="author-block">
+                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+              </span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <!-- TODO: Replace institution and conference information; update year when needed -->
+              <span class="author-block">Institution Name<br>Conference Name<br>2026</span>
+              <!-- TODO: Remove this line if no equal contribution -->
+              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving" target="_blank" rel="noopener noreferrer"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>GitHub</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/tom020723/Road-Driving-Dataset" target="_blank" rel="noopener noreferrer"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-database"></i></span>
+                    <span>Hugging Face Dataset</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Project teaser -->
+<section class="hero teaser" aria-label="Project preview">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="media-placeholder media-placeholder-wide">
+        <strong>Project Teaser Video</strong>
+        <p>Insert a short SUMO driving video showing the Nohyeong road environment, the ego vehicle, and its interactions with surrounding traffic.</p>
+      </div>
+      <p class="subtitle has-text-centered">Learning autonomous driving decisions in a SUMO environment inspired by Nohyeong, Jeju.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light" id="abstract">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Abstract</h2>
+    <div class="content">
+      <!-- Draft: revise to match the implemented environment and completed experiments. -->
+      <p>NORA explores reinforcement learning for autonomous driving in a SUMO simulation inspired by Nohyeong, Jeju. The project aims to connect road environment construction, driving task design, policy learning, and evaluation within a reproducible workflow. Driving decisions are formulated using partial observations of surrounding traffic, with actions for acceleration and lane changes and rewards intended to balance safety and progress. Using a PPO-based learning pipeline as a starting point, the project investigates how a learned policy interacts with other vehicles under selected traffic conditions. The planned evaluation combines driving videos with collision rate, completion rate, and average speed to examine both safety and efficiency. The project also aims to document the collection and use of driving data through the accompanying Road Driving Dataset. This page outlines the project design; quantitative findings will be added after evaluation.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="overview">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">Project Overview</h2>
+    <p>NORA focuses on learning driving decisions in a local road scenario. The central question is how an autonomous vehicle can make safe progress while interacting with surrounding traffic using limited observations.</p>
+    <ul>
+      <li><strong>Target Scenario:</strong> Add the selected road segment in Nohyeong, Jeju, and explain why it is relevant.</li>
+      <li><strong>Driving Task:</strong> Specify the starting point, destination, and decisions required along the route.</li>
+      <li><strong>Project Scope:</strong> Describe the implemented features and distinguish them from planned extensions.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section hero is-light" id="environment">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Road Environment</h2>
+    <div class="columns">
+      <div class="column">
+        <div class="media-placeholder">
+          <strong>Real Road Map</strong>
+          <p>Insert a map or aerial image of the selected Nohyeong road segment. Mark the route, entry and exit points, and important intersections. Include the map source.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="media-placeholder">
+          <strong>SUMO Road Network</strong>
+          <p>Insert a SUMO screenshot of the corresponding network using a similar view. Highlight the ego route and relevant lanes.</p>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <p>Add the road layout, lane configuration, speed limits, traffic flows, and vehicle types used in the simulation. Explain which real road features are represented and which are simplified.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="method">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">Learning Framework</h2>
+    <div class="media-placeholder media-placeholder-wide">
+      <strong>System Overview Diagram</strong>
+      <p>Insert a diagram connecting the SUMO environment, partial observations, policy, driving actions, and reward feedback. Show training and evaluation as separate stages.</p>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <h3 class="title is-5">Observation</h3>
+        <p>Describe the information available to the ego vehicle, such as speed, nearby vehicles, and lane context. Add the final observation dimensions and sensing range.</p>
+      </div>
+      <div class="column">
+        <h3 class="title is-5">Action</h3>
+        <p>Explain how the policy controls acceleration and lane changes. Document action limits and any safety rules applied by the environment.</p>
+      </div>
+      <div class="column">
+        <h3 class="title is-5">Reward</h3>
+        <p>Summarize the incentives for safe progress and the penalties for collisions or undesirable behavior. Add the final reward terms and weights.</p>
+      </div>
+    </div>
+    <h3 class="title is-5">Policy Training</h3>
+    <p>Document the PPO configuration, policy architecture, training budget, and random seeds used in the final experiments. If Behavior Cloning is included, explain its role and the source of its demonstrations.</p>
+  </div>
+</section>
+
+<section class="section hero is-light" id="results">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Experiments and Results</h2>
+    <div class="content">
+      <p>Add the evaluation conditions, number of episodes, and policies compared. Report measured results only after evaluation, using consistent conditions across policies.</p>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <div class="media-placeholder">
+          <strong>Representative Driving Video</strong>
+          <p>Insert a successful driving episode. Identify the policy, traffic condition, and the key decisions visible in the clip.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="media-placeholder">
+          <strong>Challenging or Failure Case</strong>
+          <p>Insert a difficult episode or failure clip. Explain what happened and which behavior needs improvement.</p>
+        </div>
+      </div>
+    </div>
+    <h3 class="title is-5">Quantitative Evaluation</h3>
+    <div class="table-container">
+      <table class="table is-fullwidth">
+        <caption class="result-caption">Evaluation results will be added after experiments.</caption>
+        <thead><tr><th scope="col">Policy</th><th scope="col">Collision Rate (%)</th><th scope="col">Completion Rate (%)</th><th scope="col">Average Speed (m/s)</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Baseline (to be selected)</th><td>Pending</td><td>Pending</td><td>Pending</td></tr>
+          <tr><th scope="row">NORA Policy</th><td>Pending</td><td>Pending</td><td>Pending</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="media-placeholder media-placeholder-wide">
+      <strong>Training and Evaluation Plots</strong>
+      <p>Insert learning curves and evaluation plots with labeled axes, units, and run counts. Include variation across runs where available.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="dataset">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">Road Driving Dataset</h2>
+    <p>The accompanying dataset is available on Hugging Face. Add a summary of its actual contents, collection settings, and intended uses.</p>
+    <div class="media-placeholder media-placeholder-wide">
+      <strong>Dataset Preview</strong>
+      <p>Insert a trajectory visualization or annotated sample showing how observations, actions, and episode information are organized.</p>
+    </div>
+    <ul>
+      <li><strong>Collection:</strong> Specify the environment version, generating policies, and traffic settings.</li>
+      <li><strong>Contents:</strong> List the available fields, units, file formats, and dataset size.</li>
+      <li><strong>Usage:</strong> Add a minimal loading example and document the license and any dataset splits.</li>
+    </ul>
+    <a class="button is-dark is-rounded" href="https://huggingface.co/datasets/tom020723/Road-Driving-Dataset" target="_blank" rel="noopener noreferrer">View Dataset on Hugging Face</a>
+  </div>
+</section>
+
+<section class="section hero is-light" id="limitations">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">Limitations and Future Work</h2>
+    <p>Describe the limits of the current road model, traffic assumptions, and policy evaluation. Explain which conditions have been tested and which remain unverified.</p>
+    <p>Add the next steps supported by the experiments, such as testing additional traffic conditions, improving observations or rewards, and evaluating more challenging routes.</p>
+  </div>
+</section>
+
+<section class="section" id="acknowledgments">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">Contributions and Acknowledgments</h2>
+    <p>Add each team member's role in environment construction, learning, dataset preparation, and evaluation. Identify the components adapted from the course repository and describe the team's own changes.</p>
+    <p>Course code and materials: <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving" target="_blank" rel="noopener noreferrer">Artificial Intelligence and Control for Autonomous Driving</a>, forked from <a href="https://github.com/bmil-ssu/Artificial-Intelligence-and-Control-for-Autonomous-Driving" target="_blank" rel="noopener noreferrer">bmil-ssu</a>.</p>
+  </div>
+</section>
+</main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>

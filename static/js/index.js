@@ -1,38 +1,15 @@
 window.HELP_IMPROVE_VIDEOJS = false;
 
-// More Works Dropdown Functionality
-function toggleMoreWorks() {
-    const dropdown = document.getElementById('moreWorksDropdown');
-    const button = document.querySelector('.more-works-btn');
-    
-    if (dropdown.classList.contains('show')) {
-        dropdown.classList.remove('show');
-        button.classList.remove('active');
-    } else {
-        dropdown.classList.add('show');
-        button.classList.add('active');
-    }
-}
-
-// Close dropdown when clicking outside
+// Close language navigation on outside click or Escape.
 document.addEventListener('click', function(event) {
-    const container = document.querySelector('.more-works-container');
-    const dropdown = document.getElementById('moreWorksDropdown');
-    const button = document.querySelector('.more-works-btn');
-    
-    if (container && !container.contains(event.target)) {
-        dropdown.classList.remove('show');
-        button.classList.remove('active');
-    }
+    const menu = document.querySelector('.language-switcher details');
+    if (menu && !menu.contains(event.target)) menu.open = false;
 });
-
-// Close dropdown on escape key
 document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape') {
-        const dropdown = document.getElementById('moreWorksDropdown');
-        const button = document.querySelector('.more-works-btn');
-        dropdown.classList.remove('show');
-        button.classList.remove('active');
+    const menu = document.querySelector('.language-switcher details');
+    if (event.key === 'Escape' && menu && menu.open) {
+        menu.open = false;
+        menu.querySelector('summary').focus();
     }
 });
 
