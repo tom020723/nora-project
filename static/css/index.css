@@ -54,6 +54,24 @@
   min-height: 320px;
 }
 
+.road-figure {
+  margin: 0 0 1.5rem;
+}
+
+.road-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+
+.road-figure figcaption {
+  margin-top: 0.75rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  text-align: center;
+}
+
 .result-caption {
   text-align: left;
   padding-bottom: 0.75rem;

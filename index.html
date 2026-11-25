@@ -289,20 +289,20 @@
     <h2 class="title is-3">도로 환경</h2>
     <div class="columns">
       <div class="column">
-        <div class="media-placeholder">
-          <strong>실제 도로 지도</strong>
-          <p>대상 노형 도로 구간의 지도 또는 항공사진을 넣어주세요. 경로, 진입·진출 지점, 주요 교차로를 표시하고 지도 출처를 적어주세요.</p>
-        </div>
+        <figure class="road-figure">
+          <img src="static/images/Real-Road-Map.png" alt="제주시 노형오거리 전경" loading="lazy">
+          <figcaption><strong>실제 도로 지도</strong><br>사진 출처: 제주일보 — 제주시 노형오거리 전경</figcaption>
+        </figure>
       </div>
       <div class="column">
-        <div class="media-placeholder">
-          <strong>SUMO 도로망</strong>
-          <p>같은 구간을 비슷한 시점에서 보여주는 SUMO 화면을 넣어주세요. 자율주행 차량의 경로와 주요 차선을 표시해주세요.</p>
-        </div>
+        <figure class="road-figure">
+          <img src="static/images/SUMO-Road-Network.png" alt="노형오거리를 구현한 SUMO 도로망과 주황색으로 표시한 통행 차단 구간" loading="lazy">
+          <figcaption><strong>SUMO 도로망</strong></figcaption>
+        </figure>
       </div>
     </div>
     <div class="content">
-      <p>도로 형태, 차선 구성, 제한속도, 교통량, 차량 종류를 작성해주세요. 실제 도로에서 반영한 요소와 단순화한 요소도 설명해주세요.</p>
+      <p>노형오거리는 다섯 도로가 만나는 신호 교차로로, 녹지를 둘러싸는 원형도로와 우회전 샛길이 함께 연결되어 있습니다. SUMO 도로망에서는 실제로 주차장으로 사용되는 원형도로 위쪽 구간을 통행할 수 없도록 막았으며, 해당 구간은 주황색으로 표시했습니다. 월랑로를 제외한 나머지 네 도로에서는 가장 왼쪽 차선에서 유턴할 수 있도록 구성했습니다.</p>
     </div>
   </div>
 </section>
