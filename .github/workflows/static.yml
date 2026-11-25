@@ -34,10 +34,22 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        id: upload
+        uses: actions/upload-pages-artifact@v4
         with:
+          name: github-pages
           # Upload entire repository
           path: '.'
+      - name: Verify artifact upload
+        env:
+          PAGES_ARTIFACT_ID: ${{ steps.upload.outputs.artifact_id }}
+        run: |
+          if [ -z "$PAGES_ARTIFACT_ID" ]; then
+            echo "::error::Pages artifact upload did not return an artifact ID."
+            exit 1
+          fi
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+        with:
+          artifact_name: github-pages
