@@ -250,6 +250,17 @@
                     </span>
                     <span class="link-block">
                       <a
+                        href="static/pdfs/report_ko.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="external-link button is-normal is-rounded is-dark"
+                      >
+                        <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                        <span>보고서 PDF</span>
+                      </a>
+                    </span>
+                    <span class="link-block">
+                      <a
                         href="static/pdfs/sample.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -679,11 +690,8 @@
             보상은 도착과 안전 관련 사건, 정확한 정지, 차선변경 횟수에 초점을 맞춥니다. 정지
             보너스는 목표 정지 위치에서 멀어질수록 절댓값 지수 형태로 감소합니다. 자세한 관측 정의와
             학습 설정은
-            <a
-              href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/ALGORITHM.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              >알고리즘 문서</a
+            <a href="static/pdfs/report_ko.pdf" target="_blank" rel="noopener noreferrer"
+              >프로젝트 보고서(PDF)</a
             >에서 확인할 수 있습니다.
           </p>
         </div>
@@ -932,7 +940,8 @@ with np.load("nohyeong-av/data/batch_0000/ppo_0000.npz") as data:
             </li>
             <li>
               <strong>재현 환경:</strong> PyTorch·CUDA 빌드 차이의 작은 수치 오차가 장기 주행과 학습
-              결과를 바꿀 수 있습니다. 정확한 재현에는 문서에 기록된 단계별 환경이 필요합니다.
+              결과를 바꿀 수 있습니다. 재현할 때는 소프트웨어 버전과 작업자 수를 함께 기록하고, 실행
+              환경을 동일하게 맞춥니다.
             </li>
           </ul>
         </div>
@@ -946,6 +955,17 @@ with np.load("nohyeong-av/data/batch_0000/ppo_0000.npz") as data:
             실행할 수 있습니다. 저장된 모델·설정·평가 결과는 main 브랜치의
             <code>results/final/</code>에 포함되어 있습니다.
           </p>
+          <p>
+            프로젝트 보고서는 모델 구조·52차원 관측·보상·평가 결과를 정리한 문서입니다. 실행 안내는
+            학습·평가·주행 데이터 수집 명령을, 데이터 컬럼 문서는 제출용 transition의 저장 형식과
+            필드를 다룹니다.
+          </p>
+          <p>
+            전체 파이프라인은 Bash와 <code>seq</code>를 사용합니다. <code>requirements.txt</code>의
+            Python 의존성과 <code>libsumo</code>를 설치하고, SUMO 실행 파일을 PATH에 등록한 뒤
+            저장소 루트에서 실행합니다. <code>SMOKE=1</code>은 작은 규모로 전체 실행 경로를
+            점검합니다.
+          </p>
           <pre><code>SMOKE=1 bash scripts/reproduce_pipeline.sh
 bash scripts/reproduce_pipeline.sh</code>
 </pre>
@@ -954,14 +974,11 @@ bash scripts/reproduce_pipeline.sh</code>
               href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/REPRODUCE.md"
               target="_blank"
               rel="noopener noreferrer"
-              >재현 환경과 전체 명령</a
+              >학습·평가·수집 실행 안내</a
             >
             ·
-            <a
-              href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/ALGORITHM.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              >알고리즘 상세</a
+            <a href="static/pdfs/report_ko.pdf" target="_blank" rel="noopener noreferrer"
+              >보고서 PDF</a
             >
             ·
             <a
@@ -969,6 +986,13 @@ bash scripts/reproduce_pipeline.sh</code>
               target="_blank"
               rel="noopener noreferrer"
               >보고서 원문 (LaTeX)</a
+            >
+            ·
+            <a
+              href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/data_columns_submission.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              >데이터 컬럼 규격</a
             >
           </p>
         </div>

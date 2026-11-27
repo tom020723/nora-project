@@ -255,6 +255,17 @@
                     </span>
                     <span class="link-block">
                       <a
+                        href="static/pdfs/report_ko.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="external-link button is-normal is-rounded is-dark"
+                      >
+                        <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                        <span>Report PDF (KO)</span>
+                      </a>
+                    </span>
+                    <span class="link-block">
+                      <a
                         href="static/pdfs/sample.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -702,11 +713,8 @@
             Rewards emphasize arrival, safety events, precise stopping, and executed lane changes.
             The stopping bonus decays exponentially with absolute distance from the target stop
             position. Full observation definitions and hyperparameters are documented in
-            <a
-              href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/ALGORITHM.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Algorithm</a
+            <a href="static/pdfs/report_ko.pdf" target="_blank" rel="noopener noreferrer"
+              >the project report (PDF, Korean)</a
             >.
           </p>
         </div>
@@ -963,8 +971,9 @@ with np.load("nohyeong-av/data/batch_0000/ppo_0000.npz") as data:
             </li>
             <li>
               <strong>Software sensitivity:</strong> small numerical differences across PyTorch/CUDA
-              builds can change long-horizon rollouts and training. Exact reproduction requires the
-              stage-specific environments in the documentation.
+              builds can change long-horizon rollouts and training. Record software versions and
+              worker counts alongside each run, and match the execution environment when reproducing
+              it.
             </li>
           </ul>
         </div>
@@ -978,6 +987,18 @@ with np.load("nohyeong-av/data/batch_0000/ppo_0000.npz") as data:
             fine-tuning, and validation/testing. Saved models, settings, and evaluation records are
             tracked under <code>results/final/</code> on the main branch.
           </p>
+          <p>
+            The project report covers the model, 52-dimensional observations, rewards, and
+            evaluation results. The execution guide provides training, evaluation, and driving-data
+            collection commands, while the data-column reference defines the submitted transition
+            format and fields.
+          </p>
+          <p>
+            The full pipeline uses Bash and <code>seq</code>. Install the Python dependencies listed
+            in <code>requirements.txt</code> and <code>libsumo</code>, add the SUMO executables to
+            PATH, and run the commands from the repository root. <code>SMOKE=1</code> checks the
+            full execution path at a reduced scale.
+          </p>
           <pre><code>SMOKE=1 bash scripts/reproduce_pipeline.sh
 bash scripts/reproduce_pipeline.sh</code>
 </pre>
@@ -986,14 +1007,11 @@ bash scripts/reproduce_pipeline.sh</code>
               href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/REPRODUCE.md"
               target="_blank"
               rel="noopener noreferrer"
-              >Environments and full reproduction commands</a
+              >Training, evaluation, and collection guide</a
             >
             ·
-            <a
-              href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/ALGORITHM.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Algorithm details</a
+            <a href="static/pdfs/report_ko.pdf" target="_blank" rel="noopener noreferrer"
+              >Report PDF (Korean)</a
             >
             ·
             <a
@@ -1001,6 +1019,13 @@ bash scripts/reproduce_pipeline.sh</code>
               target="_blank"
               rel="noopener noreferrer"
               >Report source (LaTeX)</a
+            >
+            ·
+            <a
+              href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/data_columns_submission.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Data column specification</a
             >
           </p>
         </div>
