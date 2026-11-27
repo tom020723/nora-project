@@ -176,6 +176,124 @@
   }
 }
 
+.dataset-preview {
+  margin: 2rem 0;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  background: var(--background-primary);
+}
+
+.dataset-preview-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  padding: 1rem;
+}
+
+.dataset-preview-toolbar .title {
+  margin: 0;
+}
+
+.dataset-preview-toolbar > span {
+  color: var(--text-secondary);
+}
+
+.dataset-preview-toolbar > a {
+  margin-left: auto;
+}
+
+.dataset-preview-note,
+.dataset-preview-footer {
+  padding: 0.75rem 1rem;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin: 0 !important;
+}
+
+.dataset-preview-scroll {
+  max-height: 480px;
+  overflow: auto;
+  border-block: 1px solid var(--border-color);
+}
+
+.dataset-preview-scroll:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: -2px;
+}
+
+.dataset-preview-table {
+  width: max-content !important;
+  min-width: 100%;
+  margin: 0 !important;
+  font-family: Consolas, monospace;
+  font-size: 0.875rem;
+}
+
+.dataset-preview-table th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--background-secondary);
+}
+
+.dataset-preview-table th,
+.dataset-preview-table td {
+  min-width: 100px;
+  max-width: 320px;
+  padding: 0.75rem;
+  border-right: 1px solid var(--border-color);
+  vertical-align: top;
+}
+
+.dataset-preview-table tbody tr:nth-child(even) {
+  background: var(--background-secondary);
+}
+
+.dataset-column-type {
+  display: block;
+  margin-top: 0.25rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.dataset-value {
+  width: 240px;
+}
+
+.dataset-value summary {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.dataset-cell-excerpt {
+  display: block;
+  margin-top: 0.5rem;
+  overflow-wrap: anywhere;
+}
+
+.dataset-value[open] .dataset-cell-excerpt {
+  display: none;
+}
+
+.dataset-value pre {
+  display: none;
+  max-height: 240px;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.dataset-value[open] pre {
+  display: block;
+}
+
+.dataset-null {
+  color: var(--text-secondary);
+}
+
 .result-caption {
   text-align: left;
   padding-bottom: 0.75rem;

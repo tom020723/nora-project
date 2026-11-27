@@ -899,6 +899,2015 @@
             <strong>public data collection distribution</strong>; the 7,050-case benchmark above
             uses a separate evaluation protocol.
           </p>
+          <div class="dataset-preview" id="dataset-preview">
+            <div class="dataset-preview-toolbar">
+              <h3 class="title is-5">Dataset Preview</h3>
+              <span>10 rows · 15 columns</span>
+              <a
+                href="https://huggingface.co/datasets/skku-av-team7/Nohyeong-AV/viewer/default/train"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View on Hugging Face</a
+              >
+            </div>
+            <p class="dataset-preview-note" id="dataset-preview-note">
+              Ten rows from the supplied example. Scroll horizontally and expand array/object cells
+              to inspect their contents. Long values are truncated in the original example.
+            </p>
+            <div
+              class="dataset-preview-scroll"
+              role="region"
+              aria-label="Dataset Preview"
+              aria-describedby="dataset-preview-note"
+              tabindex="0"
+            >
+              <table class="table dataset-preview-table">
+                <caption class="is-sr-only">
+                  Episode 0, steps 0–9 from the supplied dataset example
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      <code>episode</code><span class="dataset-column-type">int64</span>
+                    </th>
+                    <th scope="col">
+                      <code>t</code><span class="dataset-column-type">int64</span>
+                    </th>
+                    <th scope="col">
+                      <code>observation</code><span class="dataset-column-type">list</span>
+                    </th>
+                    <th scope="col">
+                      <code>action_raw</code><span class="dataset-column-type">list</span>
+                    </th>
+                    <th scope="col">
+                      <code>action</code><span class="dataset-column-type">dict</span>
+                    </th>
+                    <th scope="col">
+                      <code>reward</code><span class="dataset-column-type">float64</span>
+                    </th>
+                    <th scope="col">
+                      <code>terminated</code><span class="dataset-column-type">bool</span>
+                    </th>
+                    <th scope="col">
+                      <code>truncated</code><span class="dataset-column-type">bool</span>
+                    </th>
+                    <th scope="col">
+                      <code>state</code><span class="dataset-column-type">dict</span>
+                    </th>
+                    <th scope="col">
+                      <code>detected_vehicles</code><span class="dataset-column-type">list</span>
+                    </th>
+                    <th scope="col">
+                      <code>event</code><span class="dataset-column-type">dict</span>
+                    </th>
+                    <th scope="col">
+                      <code>episode_info</code><span class="dataset-column-type">dict</span>
+                    </th>
+                    <th scope="col">
+                      <code>next_observation</code><span class="dataset-column-type">list</span>
+                    </th>
+                    <th scope="col">
+                      <code>next_state</code><span class="dataset-column-type">dict</span>
+                    </th>
+                    <th scope="col">
+                      <code>new_routes</code><span class="dataset-column-type">unknown</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="dataset-scalar">0</span></td>
+                    <td><span class="dataset-scalar">0</span></td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array · truncated<span class="dataset-cell-excerpt"
+                            >[ 0.7199, 1, 1, -1, -1, 0.3628, -0.14, -1, -1, 0.5632, 0.0104,…</span
+                          >
+                        </summary>
+
+                        <pre>
+[
+  0.7199,
+  1,
+  1,
+  -1,
+  -1,
+  0.3628,
+  -0.14,
+  -1,
+  -1,
+  0.5632,
+  0.0104,
+  -1,
+  -1,
+  1,
+  1,
+  -1,
+  -1,
+  1,
+  1,
+  -1,
+  -1,
+  1,
+  1,
+  1,
+  1,
+  -1,
+  0,
+  0.15,
+  0.15,
+  0,
+  1,
+  0,
+  0,
+  0,
+  0,
+  1,
+  0.3478,
+  -0.0002,
+  1,
+  1,
+  0.4432,
+  0.0001,
+  -1,
+  0,
+  -1,
+  0,
+  -1,
+  0,
+  -1,
+  -0.00...</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array (2)
+                          <span class="dataset-cell-excerpt">[ 0.3975385725, 0 ]</span>
+                        </summary>
+                        <pre>
+[
+  0.3975385725,
+  0
+]</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object (4)<span class="dataset-cell-excerpt"
+                            >{ &quot;accel_raw&quot;: 0.3975385725, &quot;lane_change_raw&quot;: 0,
+                            &quot;lane_chang…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;accel_raw&quot;: 0.3975385725,
+  &quot;lane_change_raw&quot;: 0,
+  &quot;lane_change&quot;: 0,
+  &quot;lane_change_applied&quot;: true
+}</pre>
+                      </details>
+                    </td>
+                    <td><span class="dataset-scalar">-0.0001</span></td>
+                    <td><span class="dataset-scalar">false</span></td>
+                    <td><span class="dataset-scalar">false</span></td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object · truncated<span class="dataset-cell-excerpt"
+                            >{ &quot;ego_alive&quot;: true, &quot;ego_x&quot;: 95.89,
+                            &quot;ego_y&quot;: -305.39, &quot;ego_sp…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;ego_alive&quot;: true,
+  &quot;ego_x&quot;: 95.89,
+  &quot;ego_y&quot;: -305.39,
+  &quot;ego_speed&quot;: 10,
+  &quot;ego_lane&quot;: 1,
+  &quot;ego_lane_id&quot;: &quot;A3_in1_1&quot;,
+  &quot;ego_road_id&quot;: &quot;A3_in1&quot;,
+  &quot;ego_lane_pos&quot;: 0,
+  &quot;vehicles&quot;: [
+    {
+      &quot;id&quot;: &quot;ego&quot;,
+      &quot;x&quot;: 95.89,
+      &quot;y&quot;: -305.39,
+      &quot;speed&quot;: 10,
+      &quot;lane&quot;: 1,
+      &quot;lane_id&quot;: &quot;A3_in1_1&quot;,
+  ...</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array (2)<span class="dataset-cell-excerpt"
+                            >[ { &quot;id&quot;: &quot;lf_RING_A3_A5.19&quot;, &quot;x&quot;:
+                            86.4314, &quot;y&quot;: -284.0341, &quot;r…</span
+                          >
+                        </summary>
+
+                        <pre>
+[
+  {
+    &quot;id&quot;: &quot;lf_RING_A3_A5.19&quot;,
+    &quot;x&quot;: 86.4314,
+    &quot;y&quot;: -284.0341,
+    &quot;rel_pos&quot;: 23.1417,
+    &quot;speed&quot;: 8.0556,
+    &quot;lane_offset&quot;: 1
+  },
+  {
+    &quot;id&quot;: &quot;f_A3_A2.19&quot;,
+    &quot;x&quot;: 86.7504,
+    &quot;y&quot;: -273.5165,
+    &quot;rel_pos&quot;: 33.1584,
+    &quot;speed&quot;: 10.145,
+    &quot;lane_offset&quot;: 0
+  }
+]</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object (10)<span class="dataset-cell-excerpt"
+                            >{ &quot;collided&quot;: false, &quot;arrived&quot;: false,
+                            &quot;lane_before&quot;: 1, &quot;lane…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;collided&quot;: false,
+  &quot;arrived&quot;: false,
+  &quot;lane_before&quot;: 1,
+  &quot;lane_after&quot;: 1,
+  &quot;red_light_violation&quot;: false,
+  &quot;wrong_lane&quot;: false,
+  &quot;collision_partner_id&quot;: null,
+  &quot;collision_partner_type&quot;: null,
+  &quot;collision_partner_speed&quot;: null,
+  &quot;ego_is_collider&quot;: null
+}</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object (5)<span class="dataset-cell-excerpt"
+                            >{ &quot;route_id&quot;: &quot;ego_d_A3_A3&quot;, &quot;seed&quot;: 0,
+                            &quot;sumo_seed&quot;: 92137, &quot;s…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;route_id&quot;: &quot;ego_d_A3_A3&quot;,
+  &quot;seed&quot;: 0,
+  &quot;sumo_seed&quot;: 92137,
+  &quot;sim_time_start_s&quot;: 250.5,
+  &quot;signal_offset_s&quot;: 102
+}</pre>
+                      </details>
+                    </td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object · truncated<span class="dataset-cell-excerpt"
+                            >{ &quot;ego_d_A3_A3&quot;: [ &quot;A3_in1&quot;, &quot;A3_in&quot;,
+                            &quot;A3_out&quot;, &quot;A3_out1&quot; ], &quot;…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;ego_d_A3_A3&quot;: [
+    &quot;A3_in1&quot;,
+    &quot;A3_in&quot;,
+    &quot;A3_out&quot;,
+    &quot;A3_out1&quot;
+  ],
+  &quot;r_A1_A1&quot;: [
+    &quot;A1_in2&quot;,
+    &quot;A1_in1&quot;,
+    &quot;A1_in&quot;,
+    &quot;A1_out&quot;,
+    &quot;A1_out1&quot;,
+    &quot;A1_out2&quot;
+  ],
+  &quot;r_A1_A2&quot;: [
+    &quot;A1_in2&quot;,
+    &quot;A1_in1&quot;,
+    &quot;A1_in&quot;,
+    &quot;A2_out&quot;,
+    &quot;A2_out1&quot;
+  ],
+  &quot;r_A1_A3&quot;: [
+    &quot;A1_in2&quot;,
+    &quot;A1_in1&quot;,
+   ...</pre>
+                      </details>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="dataset-scalar">0</span></td>
+                    <td><span class="dataset-scalar">1</span></td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array · truncated<span class="dataset-cell-excerpt"
+                            >[ 0.7972, 1, 1, -1, -1, 0.3229, -0.2873, -1, -1, 0.5561, -0.05…</span
+                          >
+                        </summary>
+
+                        <pre>
+[
+  0.7972,
+  1,
+  1,
+  -1,
+  -1,
+  0.3229,
+  -0.2873,
+  -1,
+  -1,
+  0.5561,
+  -0.0512,
+  -1,
+  -1,
+  1,
+  1,
+  -1,
+  -1,
+  1,
+  1,
+  -1,
+  -1,
+  1,
+  1,
+  1,
+  1,
+  -1,
+  0,
+  0.15,
+  0.15,
+  0,
+  1,
+  0,
+  0,
+  0,
+  0,
+  1,
+  0.3393,
+  -0.0002,
+  1,
+  1,
+  0.4347,
+  0.0001,
+  -1,
+  0,
+  -1,
+  0,
+  -1,
+  0,
+  -1,
+  -0...</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array (2)
+                          <span class="dataset-cell-excerpt">[ 0.3926847279, 0 ]</span>
+                        </summary>
+                        <pre>
+[
+  0.3926847279,
+  0
+]</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object (4)<span class="dataset-cell-excerpt"
+                            >{ &quot;accel_raw&quot;: 0.3926847279, &quot;lane_change_raw&quot;: 0,
+                            &quot;lane_chang…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;accel_raw&quot;: 0.3926847279,
+  &quot;lane_change_raw&quot;: 0,
+  &quot;lane_change&quot;: 0,
+  &quot;lane_change_applied&quot;: true
+}</pre>
+                      </details>
+                    </td>
+                    <td><span class="dataset-scalar">-0.0001</span></td>
+                    <td><span class="dataset-scalar">false</span></td>
+                    <td><span class="dataset-scalar">false</span></td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object · truncated<span class="dataset-cell-excerpt"
+                            >{ &quot;ego_alive&quot;: true, &quot;ego_x&quot;: 94.3639,
+                            &quot;ego_y&quot;: -300.0679, &quot;eg…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;ego_alive&quot;: true,
+  &quot;ego_x&quot;: 94.3639,
+  &quot;ego_y&quot;: -300.0679,
+  &quot;ego_speed&quot;: 11.0734,
+  &quot;ego_lane&quot;: 1,
+  &quot;ego_lane_id&quot;: &quot;A3_in1_1&quot;,
+  &quot;ego_road_id&quot;: &quot;A3_in1&quot;,
+  &quot;ego_lane_pos&quot;: 5.5367,
+  &quot;vehicles&quot;: [
+    {
+      &quot;id&quot;: &quot;ego&quot;,
+      &quot;x&quot;: 94.3639,
+      &quot;y&quot;: -300.0679,
+      &quot;speed&quot;: 11.0734,
+      &quot;lane&quot;: 1,
+      &quot;l...</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array (2)<span class="dataset-cell-excerpt"
+                            >[ { &quot;id&quot;: &quot;lf_RING_A3_A5.19&quot;, &quot;x&quot;:
+                            85.4551, &quot;y&quot;: -280.6295, &quot;r…</span
+                          >
+                        </summary>
+
+                        <pre>
+[
+  {
+    &quot;id&quot;: &quot;lf_RING_A3_A5.19&quot;,
+    &quot;x&quot;: 85.4551,
+    &quot;y&quot;: -280.6295,
+    &quot;rel_pos&quot;: 21.1467,
+    &quot;speed&quot;: 7.0833,
+    &quot;lane_offset&quot;: 1
+  },
+  {
+    &quot;id&quot;: &quot;f_A3_A2.19&quot;,
+    &quot;x&quot;: 85.3223,
+    &quot;y&quot;: -268.5362,
+    &quot;rel_pos&quot;: 32.8028,
+    &quot;speed&quot;: 10.3621,
+    &quot;lane_offset&quot;: 0
+  }
+]</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object (10)<span class="dataset-cell-excerpt"
+                            >{ &quot;collided&quot;: false, &quot;arrived&quot;: false,
+                            &quot;lane_before&quot;: 1, &quot;lane…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;collided&quot;: false,
+  &quot;arrived&quot;: false,
+  &quot;lane_before&quot;: 1,
+  &quot;lane_after&quot;: 1,
+  &quot;red_light_violation&quot;: false,
+  &quot;wrong_lane&quot;: false,
+  &quot;collision_partner_id&quot;: null,
+  &quot;collision_partner_type&quot;: null,
+  &quot;collision_partner_speed&quot;: null,
+  &quot;ego_is_collider&quot;: null
+}</pre>
+                      </details>
+                    </td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="dataset-scalar">0</span></td>
+                    <td><span class="dataset-scalar">2</span></td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array · truncated<span class="dataset-cell-excerpt"
+                            >[ 0.8735, 1, 1, -1, -1, 0.2627, -0.4336, -1, -1, 0.5401, -0.11…</span
+                          >
+                        </summary>
+
+                        <pre>
+[
+  0.8735,
+  1,
+  1,
+  -1,
+  -1,
+  0.2627,
+  -0.4336,
+  -1,
+  -1,
+  0.5401,
+  -0.1149,
+  -1,
+  -1,
+  1,
+  1,
+  -1,
+  -1,
+  1,
+  1,
+  -1,
+  -1,
+  1,
+  1,
+  1,
+  1,
+  -1,
+  0,
+  0.15,
+  0.15,
+  0,
+  1,
+  0,
+  0,
+  0,
+  0,
+  1,
+  0.3299,
+  -0.0002,
+  1,
+  1,
+  0.4253,
+  0.0001,
+  -1,
+  0,
+  -1,
+  0,
+  -1,
+  0,
+  -1,
+  -0...</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array (2)
+                          <span class="dataset-cell-excerpt">[ 0.1428956389, 0 ]</span>
+                        </summary>
+                        <pre>
+[
+  0.1428956389,
+  0
+]</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object (4)<span class="dataset-cell-excerpt"
+                            >{ &quot;accel_raw&quot;: 0.1428956389, &quot;lane_change_raw&quot;: 0,
+                            &quot;lane_chang…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;accel_raw&quot;: 0.1428956389,
+  &quot;lane_change_raw&quot;: 0,
+  &quot;lane_change&quot;: 0,
+  &quot;lane_change_applied&quot;: true
+}</pre>
+                      </details>
+                    </td>
+                    <td><span class="dataset-scalar">-0.0001</span></td>
+                    <td><span class="dataset-scalar">false</span></td>
+                    <td><span class="dataset-scalar">false</span></td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object · truncated<span class="dataset-cell-excerpt"
+                            >{ &quot;ego_alive&quot;: true, &quot;ego_x&quot;: 92.6917,
+                            &quot;ego_y&quot;: -294.2362, &quot;eg…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;ego_alive&quot;: true,
+  &quot;ego_x&quot;: 92.6917,
+  &quot;ego_y&quot;: -294.2362,
+  &quot;ego_speed&quot;: 12.1336,
+  &quot;ego_lane&quot;: 1,
+  &quot;ego_lane_id&quot;: &quot;A3_in1_1&quot;,
+  &quot;ego_road_id&quot;: &quot;A3_in1&quot;,
+  &quot;ego_lane_pos&quot;: 11.6035,
+  &quot;vehicles&quot;: [
+    {
+      &quot;id&quot;: &quot;ego&quot;,
+      &quot;x&quot;: 92.6917,
+      &quot;y&quot;: -294.2362,
+      &quot;speed&quot;: 12.1336,
+      &quot;lane&quot;: 1,
+      &quot;...</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array (2)<span class="dataset-cell-excerpt"
+                            >[ { &quot;id&quot;: &quot;lf_RING_A3_A5.19&quot;, &quot;x&quot;:
+                            84.6129, &quot;y&quot;: -277.6922, &quot;r…</span
+                          >
+                        </summary>
+
+                        <pre>
+[
+  {
+    &quot;id&quot;: &quot;lf_RING_A3_A5.19&quot;,
+    &quot;x&quot;: 84.6129,
+    &quot;y&quot;: -277.6922,
+    &quot;rel_pos&quot;: 18.1354,
+    &quot;speed&quot;: 6.1111,
+    &quot;lane_offset&quot;: 1
+  },
+  {
+    &quot;id&quot;: &quot;f_A3_A2.19&quot;,
+    &quot;x&quot;: 83.87,
+    &quot;y&quot;: -263.4715,
+    &quot;rel_pos&quot;: 32.0048,
+    &quot;speed&quot;: 10.5376,
+    &quot;lane_offset&quot;: 0
+  }
+]</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object (10)<span class="dataset-cell-excerpt"
+                            >{ &quot;collided&quot;: false, &quot;arrived&quot;: false,
+                            &quot;lane_before&quot;: 1, &quot;lane…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;collided&quot;: false,
+  &quot;arrived&quot;: false,
+  &quot;lane_before&quot;: 1,
+  &quot;lane_after&quot;: 1,
+  &quot;red_light_violation&quot;: false,
+  &quot;wrong_lane&quot;: false,
+  &quot;collision_partner_id&quot;: null,
+  &quot;collision_partner_type&quot;: null,
+  &quot;collision_partner_speed&quot;: null,
+  &quot;ego_is_collider&quot;: null
+}</pre>
+                      </details>
+                    </td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="dataset-scalar">0</span></td>
+                    <td><span class="dataset-scalar">3</span></td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array · truncated<span class="dataset-cell-excerpt"
+                            >[ 0.9013, 1, 1, -1, -1, 0.1889, -0.5314, -1, -1, 0.5217, -0.13…</span
+                          >
+                        </summary>
+
+                        <pre>
+[
+  0.9013,
+  1,
+  1,
+  -1,
+  -1,
+  0.1889,
+  -0.5314,
+  -1,
+  -1,
+  0.5217,
+  -0.1326,
+  -1,
+  -1,
+  1,
+  1,
+  -1,
+  -1,
+  1,
+  1,
+  -1,
+  -1,
+  1,
+  1,
+  1,
+  1,
+  -1,
+  0,
+  0.15,
+  0.15,
+  0,
+  1,
+  0,
+  0,
+  0,
+  0,
+  1,
+  0.3203,
+  -0.0002,
+  1,
+  1,
+  0.4157,
+  0.0001,
+  -1,
+  0,
+  -1,
+  0,
+  -1,
+  0,
+  -1,
+  -0...</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array (2)
+                          <span class="dataset-cell-excerpt">[ 0.1116629392, 0 ]</span>
+                        </summary>
+                        <pre>
+[
+  0.1116629392,
+  0
+]</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object (4)<span class="dataset-cell-excerpt"
+                            >{ &quot;accel_raw&quot;: 0.1116629392, &quot;lane_change_raw&quot;: 0,
+                            &quot;lane_chang…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;accel_raw&quot;: 0.1116629392,
+  &quot;lane_change_raw&quot;: 0,
+  &quot;lane_change&quot;: 0,
+  &quot;lane_change_applied&quot;: true
+}</pre>
+                      </details>
+                    </td>
+                    <td><span class="dataset-scalar">-0.0001</span></td>
+                    <td><span class="dataset-scalar">false</span></td>
+                    <td><span class="dataset-scalar">false</span></td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object · truncated<span class="dataset-cell-excerpt"
+                            >{ &quot;ego_alive&quot;: true, &quot;ego_x&quot;: 90.9663,
+                            &quot;ego_y&quot;: -288.219, &quot;ego…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;ego_alive&quot;: true,
+  &quot;ego_x&quot;: 90.9663,
+  &quot;ego_y&quot;: -288.219,
+  &quot;ego_speed&quot;: 12.5194,
+  &quot;ego_lane&quot;: 1,
+  &quot;ego_lane_id&quot;: &quot;A3_in1_1&quot;,
+  &quot;ego_road_id&quot;: &quot;A3_in1&quot;,
+  &quot;ego_lane_pos&quot;: 17.8632,
+  &quot;vehicles&quot;: [
+    {
+      &quot;id&quot;: &quot;ego&quot;,
+      &quot;x&quot;: 90.9663,
+      &quot;y&quot;: -288.219,
+      &quot;speed&quot;: 12.5194,
+      &quot;lane&quot;: 1,
+      &quot;la...</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array (2)<span class="dataset-cell-excerpt"
+                            >[ { &quot;id&quot;: &quot;lf_RING_A3_A5.19&quot;, &quot;x&quot;:
+                            83.9047, &quot;y&quot;: -275.2222, &quot;r…</span
+                          >
+                        </summary>
+
+                        <pre>
+[
+  {
+    &quot;id&quot;: &quot;lf_RING_A3_A5.19&quot;,
+    &quot;x&quot;: 83.9047,
+    &quot;y&quot;: -275.2222,
+    &quot;rel_pos&quot;: 14.4451,
+    &quot;speed&quot;: 5.1389,
+    &quot;lane_offset&quot;: 1
+  },
+  {
+    &quot;id&quot;: &quot;f_A3_A2.19&quot;,
+    &quot;x&quot;: 82.3985,
+    &quot;y&quot;: -258.3397,
+    &quot;rel_pos&quot;: 31.0839,
+    &quot;speed&quot;: 10.6775,
+    &quot;lane_offset&quot;: 0
+  }
+]</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object (10)<span class="dataset-cell-excerpt"
+                            >{ &quot;collided&quot;: false, &quot;arrived&quot;: false,
+                            &quot;lane_before&quot;: 1, &quot;lane…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;collided&quot;: false,
+  &quot;arrived&quot;: false,
+  &quot;lane_before&quot;: 1,
+  &quot;lane_after&quot;: 1,
+  &quot;red_light_violation&quot;: false,
+  &quot;wrong_lane&quot;: false,
+  &quot;collision_partner_id&quot;: null,
+  &quot;collision_partner_type&quot;: null,
+  &quot;collision_partner_speed&quot;: null,
+  &quot;ego_is_collider&quot;: null
+}</pre>
+                      </details>
+                    </td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="dataset-scalar">0</span></td>
+                    <td><span class="dataset-scalar">4</span></td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array · truncated<span class="dataset-cell-excerpt"
+                            >[ 0.923, 1, 1, -1, -1, 0.1221, -0.4811, -1, -1, 0.5014, -0.146…</span
+                          >
+                        </summary>
+
+                        <pre>
+[
+  0.923,
+  1,
+  1,
+  -1,
+  -1,
+  0.1221,
+  -0.4811,
+  -1,
+  -1,
+  0.5014,
+  -0.1463,
+  -1,
+  -1,
+  1,
+  1,
+  -1,
+  -1,
+  1,
+  1,
+  -1,
+  -1,
+  1,
+  1,
+  1,
+  1,
+  -1,
+  0,
+  0.15,
+  0.15,
+  0,
+  1,
+  0,
+  0,
+  0,
+  0,
+  1,
+  0.3104,
+  -0.0002,
+  1,
+  1,
+  0.4058,
+  0.0001,
+  -1,
+  0,
+  -1,
+  0,
+  -1,
+  0,
+  -1,
+  -0....</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array (2)
+                          <span class="dataset-cell-excerpt">[ -0.06074626, 0 ]</span>
+                        </summary>
+                        <pre>
+[
+  -0.06074626,
+  0
+]</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object (4)<span class="dataset-cell-excerpt"
+                            >{ &quot;accel_raw&quot;: -0.06074626, &quot;lane_change_raw&quot;: 0,
+                            &quot;lane_change…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;accel_raw&quot;: -0.06074626,
+  &quot;lane_change_raw&quot;: 0,
+  &quot;lane_change&quot;: 0,
+  &quot;lane_change_applied&quot;: true
+}</pre>
+                      </details>
+                    </td>
+                    <td><span class="dataset-scalar">-0.0001</span></td>
+                    <td><span class="dataset-scalar">false</span></td>
+                    <td><span class="dataset-scalar">false</span></td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object · truncated<span class="dataset-cell-excerpt"
+                            >{ &quot;ego_alive&quot;: true, &quot;ego_x&quot;: 89.1993,
+                            &quot;ego_y&quot;: -282.057, &quot;ego…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;ego_alive&quot;: true,
+  &quot;ego_x&quot;: 89.1993,
+  &quot;ego_y&quot;: -282.057,
+  &quot;ego_speed&quot;: 12.8209,
+  &quot;ego_lane&quot;: 1,
+  &quot;ego_lane_id&quot;: &quot;A3_in1_1&quot;,
+  &quot;ego_road_id&quot;: &quot;A3_in1&quot;,
+  &quot;ego_lane_pos&quot;: 24.2736,
+  &quot;vehicles&quot;: [
+    {
+      &quot;id&quot;: &quot;ego&quot;,
+      &quot;x&quot;: 89.1993,
+      &quot;y&quot;: -282.057,
+      &quot;speed&quot;: 12.8209,
+      &quot;lane&quot;: 1,
+      &quot;la...</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array (2)<span class="dataset-cell-excerpt"
+                            >[ { &quot;id&quot;: &quot;lf_RING_A3_A5.19&quot;, &quot;x&quot;:
+                            83.0587, &quot;y&quot;: -272.2716, &quot;r…</span
+                          >
+                        </summary>
+
+                        <pre>
+[
+  {
+    &quot;id&quot;: &quot;lf_RING_A3_A5.19&quot;,
+    &quot;x&quot;: 83.0587,
+    &quot;y&quot;: -272.2716,
+    &quot;rel_pos&quot;: 11.1041,
+    &quot;speed&quot;: 6.1389,
+    &quot;lane_offset&quot;: 1
+  },
+  {
+    &quot;id&quot;: &quot;f_A3_A2.19&quot;,
+    &quot;x&quot;: 80.9116,
+    &quot;y&quot;: -253.1544,
+    &quot;rel_pos&quot;: 30.0677,
+    &quot;speed&quot;: 10.7886,
+    &quot;lane_offset&quot;: 0
+  }
+]</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object (10)<span class="dataset-cell-excerpt"
+                            >{ &quot;collided&quot;: false, &quot;arrived&quot;: false,
+                            &quot;lane_before&quot;: 1, &quot;lane…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;collided&quot;: false,
+  &quot;arrived&quot;: false,
+  &quot;lane_before&quot;: 1,
+  &quot;lane_after&quot;: 1,
+  &quot;red_light_violation&quot;: false,
+  &quot;wrong_lane&quot;: false,
+  &quot;collision_partner_id&quot;: null,
+  &quot;collision_partner_type&quot;: null,
+  &quot;collision_partner_speed&quot;: null,
+  &quot;ego_is_collider&quot;: null
+}</pre>
+                      </details>
+                    </td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="dataset-scalar">0</span></td>
+                    <td><span class="dataset-scalar">5</span></td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array · truncated<span class="dataset-cell-excerpt"
+                            >[ 0.9112, 1, 1, -1, -1, 0.0669, -0.3973, -1, -1, 0.4836, -0.12…</span
+                          >
+                        </summary>
+
+                        <pre>
+[
+  0.9112,
+  1,
+  1,
+  -1,
+  -1,
+  0.0669,
+  -0.3973,
+  -1,
+  -1,
+  0.4836,
+  -0.1279,
+  -1,
+  -1,
+  1,
+  1,
+  -1,
+  -1,
+  1,
+  1,
+  -1,
+  -1,
+  1,
+  1,
+  1,
+  1,
+  -1,
+  0,
+  0.15,
+  0.15,
+  0,
+  1,
+  0,
+  0,
+  0,
+  0,
+  1,
+  0.3007,
+  -0.0002,
+  1,
+  1,
+  0.3961,
+  0.0001,
+  -1,
+  0,
+  -1,
+  0,
+  -1,
+  0,
+  -1,
+  -0...</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array (2)
+                          <span class="dataset-cell-excerpt">[ -0.1102432534, 0 ]</span>
+                        </summary>
+                        <pre>
+[
+  -0.1102432534,
+  0
+]</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object (4)<span class="dataset-cell-excerpt"
+                            >{ &quot;accel_raw&quot;: -0.1102432534, &quot;lane_change_raw&quot;: 0,
+                            &quot;lane_chan…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;accel_raw&quot;: -0.1102432534,
+  &quot;lane_change_raw&quot;: 0,
+  &quot;lane_change&quot;: 0,
+  &quot;lane_change_applied&quot;: true
+}</pre>
+                      </details>
+                    </td>
+                    <td><span class="dataset-scalar">-0.0001</span></td>
+                    <td><span class="dataset-scalar">false</span></td>
+                    <td><span class="dataset-scalar">false</span></td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object · truncated<span class="dataset-cell-excerpt"
+                            >{ &quot;ego_alive&quot;: true, &quot;ego_x&quot;: 87.455,
+                            &quot;ego_y&quot;: -275.9738, &quot;ego…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;ego_alive&quot;: true,
+  &quot;ego_x&quot;: 87.455,
+  &quot;ego_y&quot;: -275.9738,
+  &quot;ego_speed&quot;: 12.6569,
+  &quot;ego_lane&quot;: 1,
+  &quot;ego_lane_id&quot;: &quot;A3_in1_1&quot;,
+  &quot;ego_road_id&quot;: &quot;A3_in1&quot;,
+  &quot;ego_lane_pos&quot;: 30.6021,
+  &quot;vehicles&quot;: [
+    {
+      &quot;id&quot;: &quot;ego&quot;,
+      &quot;x&quot;: 87.455,
+      &quot;y&quot;: -275.9738,
+      &quot;speed&quot;: 12.6569,
+      &quot;lane&quot;: 1,
+      &quot;la...</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array (2)<span class="dataset-cell-excerpt"
+                            >[ { &quot;id&quot;: &quot;lf_RING_A3_A5.19&quot;, &quot;x&quot;:
+                            82.0748, &quot;y&quot;: -268.8403, &quot;r…</span
+                          >
+                        </summary>
+
+                        <pre>
+[
+  {
+    &quot;id&quot;: &quot;lf_RING_A3_A5.19&quot;,
+    &quot;x&quot;: 82.0748,
+    &quot;y&quot;: -268.8403,
+    &quot;rel_pos&quot;: 8.3451,
+    &quot;speed&quot;: 7.1389,
+    &quot;lane_offset&quot;: 1
+  },
+  {
+    &quot;id&quot;: &quot;f_A3_A2.19&quot;,
+    &quot;x&quot;: 79.4122,
+    &quot;y&quot;: -247.9252,
+    &quot;rel_pos&quot;: 29.1792,
+    &quot;speed&quot;: 10.8799,
+    &quot;lane_offset&quot;: 0
+  }
+]</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object (10)<span class="dataset-cell-excerpt"
+                            >{ &quot;collided&quot;: false, &quot;arrived&quot;: false,
+                            &quot;lane_before&quot;: 1, &quot;lane…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;collided&quot;: false,
+  &quot;arrived&quot;: false,
+  &quot;lane_before&quot;: 1,
+  &quot;lane_after&quot;: 1,
+  &quot;red_light_violation&quot;: false,
+  &quot;wrong_lane&quot;: false,
+  &quot;collision_partner_id&quot;: null,
+  &quot;collision_partner_type&quot;: null,
+  &quot;collision_partner_speed&quot;: null,
+  &quot;ego_is_collider&quot;: null
+}</pre>
+                      </details>
+                    </td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="dataset-scalar">0</span></td>
+                    <td><span class="dataset-scalar">6</span></td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array · truncated<span class="dataset-cell-excerpt"
+                            >[ 0.8898, 1, 1, -1, -1, 0.0247, -0.3038, -1, -1, 0.4696, -0.10…</span
+                          >
+                        </summary>
+
+                        <pre>
+[
+  0.8898,
+  1,
+  1,
+  -1,
+  -1,
+  0.0247,
+  -0.3038,
+  -1,
+  -1,
+  0.4696,
+  -0.1009,
+  -1,
+  -1,
+  1,
+  1,
+  -1,
+  -1,
+  1,
+  1,
+  -1,
+  -1,
+  1,
+  1,
+  1,
+  1,
+  -1,
+  0,
+  0.15,
+  0.15,
+  0,
+  1,
+  0,
+  0,
+  0,
+  0,
+  1,
+  0.2912,
+  -0.0002,
+  1,
+  1,
+  0.3866,
+  0.0001,
+  -1,
+  0,
+  -1,
+  0,
+  -1,
+  0,
+  -1,
+  -0...</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array (2)
+                          <span class="dataset-cell-excerpt">[ -0.1242521852, 0 ]</span>
+                        </summary>
+                        <pre>
+[
+  -0.1242521852,
+  0
+]</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object (4)<span class="dataset-cell-excerpt"
+                            >{ &quot;accel_raw&quot;: -0.1242521852, &quot;lane_change_raw&quot;: 0,
+                            &quot;lane_chan…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;accel_raw&quot;: -0.1242521852,
+  &quot;lane_change_raw&quot;: 0,
+  &quot;lane_change&quot;: 0,
+  &quot;lane_change_applied&quot;: true
+}</pre>
+                      </details>
+                    </td>
+                    <td><span class="dataset-scalar">-0.0001</span></td>
+                    <td><span class="dataset-scalar">false</span></td>
+                    <td><span class="dataset-scalar">false</span></td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object · truncated<span class="dataset-cell-excerpt"
+                            >{ &quot;ego_alive&quot;: true, &quot;ego_x&quot;: 85.7517,
+                            &quot;ego_y&quot;: -270.0336, &quot;eg…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;ego_alive&quot;: true,
+  &quot;ego_x&quot;: 85.7517,
+  &quot;ego_y&quot;: -270.0336,
+  &quot;ego_speed&quot;: 12.3592,
+  &quot;ego_lane&quot;: 1,
+  &quot;ego_lane_id&quot;: &quot;A3_in1_1&quot;,
+  &quot;ego_road_id&quot;: &quot;A3_in1&quot;,
+  &quot;ego_lane_pos&quot;: 36.7817,
+  &quot;vehicles&quot;: [
+    {
+      &quot;id&quot;: &quot;ego&quot;,
+      &quot;x&quot;: 85.7517,
+      &quot;y&quot;: -270.0336,
+      &quot;speed&quot;: 12.3592,
+      &quot;lane&quot;: 1,
+      &quot;...</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array (2)<span class="dataset-cell-excerpt"
+                            >[ { &quot;id&quot;: &quot;lf_RING_A3_A5.19&quot;, &quot;x&quot;:
+                            80.9531, &quot;y&quot;: -264.9284, &quot;r…</span
+                          >
+                        </summary>
+
+                        <pre>
+[
+  {
+    &quot;id&quot;: &quot;lf_RING_A3_A5.19&quot;,
+    &quot;x&quot;: 80.9531,
+    &quot;y&quot;: -264.9284,
+    &quot;rel_pos&quot;: 6.235,
+    &quot;speed&quot;: 8.1389,
+    &quot;lane_offset&quot;: 1
+  },
+  {
+    &quot;id&quot;: &quot;f_A3_A2.19&quot;,
+    &quot;x&quot;: 77.9021,
+    &quot;y&quot;: -242.6589,
+    &quot;rel_pos&quot;: 28.4783,
+    &quot;speed&quot;: 10.9573,
+    &quot;lane_offset&quot;: 0
+  }
+]</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object (10)<span class="dataset-cell-excerpt"
+                            >{ &quot;collided&quot;: false, &quot;arrived&quot;: false,
+                            &quot;lane_before&quot;: 1, &quot;lane…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;collided&quot;: false,
+  &quot;arrived&quot;: false,
+  &quot;lane_before&quot;: 1,
+  &quot;lane_after&quot;: 1,
+  &quot;red_light_violation&quot;: false,
+  &quot;wrong_lane&quot;: false,
+  &quot;collision_partner_id&quot;: null,
+  &quot;collision_partner_type&quot;: null,
+  &quot;collision_partner_speed&quot;: null,
+  &quot;ego_is_collider&quot;: null
+}</pre>
+                      </details>
+                    </td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="dataset-scalar">0</span></td>
+                    <td><span class="dataset-scalar">7</span></td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array · truncated<span class="dataset-cell-excerpt"
+                            >[ 0.8656, 1, 1, -1, -1, -0.0044, -0.2098, -1, -1, 0.4596, -0.0…</span
+                          >
+                        </summary>
+
+                        <pre>
+[
+  0.8656,
+  1,
+  1,
+  -1,
+  -1,
+  -0.0044,
+  -0.2098,
+  -1,
+  -1,
+  0.4596,
+  -0.0718,
+  -1,
+  -1,
+  1,
+  1,
+  -1,
+  -1,
+  1,
+  1,
+  -1,
+  -1,
+  1,
+  1,
+  1,
+  1,
+  -1,
+  0,
+  0.15,
+  0.15,
+  0,
+  1,
+  0,
+  0,
+  0,
+  0,
+  1,
+  0.2819,
+  -0.0002,
+  1,
+  1,
+  0.3773,
+  0.0001,
+  -1,
+  0,
+  -1,
+  0,
+  -1,
+  0,
+  -1,
+  -...</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array (2)
+                          <span class="dataset-cell-excerpt">[ -0.2203930616, 0 ]</span>
+                        </summary>
+                        <pre>
+[
+  -0.2203930616,
+  0
+]</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object (4)<span class="dataset-cell-excerpt"
+                            >{ &quot;accel_raw&quot;: -0.2203930616, &quot;lane_change_raw&quot;: 0,
+                            &quot;lane_chan…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;accel_raw&quot;: -0.2203930616,
+  &quot;lane_change_raw&quot;: 0,
+  &quot;lane_change&quot;: 0,
+  &quot;lane_change_applied&quot;: true
+}</pre>
+                      </details>
+                    </td>
+                    <td><span class="dataset-scalar">-0.0001</span></td>
+                    <td><span class="dataset-scalar">false</span></td>
+                    <td><span class="dataset-scalar">false</span></td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object · truncated<span class="dataset-cell-excerpt"
+                            >{ &quot;ego_alive&quot;: true, &quot;ego_x&quot;: 84.0946,
+                            &quot;ego_y&quot;: -264.2547, &quot;eg…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;ego_alive&quot;: true,
+  &quot;ego_x&quot;: 84.0946,
+  &quot;ego_y&quot;: -264.2547,
+  &quot;ego_speed&quot;: 12.0238,
+  &quot;ego_lane&quot;: 1,
+  &quot;ego_lane_id&quot;: &quot;A3_in1_1&quot;,
+  &quot;ego_road_id&quot;: &quot;A3_in1&quot;,
+  &quot;ego_lane_pos&quot;: 42.7936,
+  &quot;vehicles&quot;: [
+    {
+      &quot;id&quot;: &quot;ego&quot;,
+      &quot;x&quot;: 84.0946,
+      &quot;y&quot;: -264.2547,
+      &quot;speed&quot;: 12.0238,
+      &quot;lane&quot;: 1,
+      &quot;...</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array (2)<span class="dataset-cell-excerpt"
+                            >[ { &quot;id&quot;: &quot;lf_RING_A3_A5.19&quot;, &quot;x&quot;:
+                            79.6976, &quot;y&quot;: -260.5496, &quot;r…</span
+                          >
+                        </summary>
+
+                        <pre>
+[
+  {
+    &quot;id&quot;: &quot;lf_RING_A3_A5.19&quot;,
+    &quot;x&quot;: 79.6976,
+    &quot;y&quot;: -260.5496,
+    &quot;rel_pos&quot;: 4.7782,
+    &quot;speed&quot;: 9.1102,
+    &quot;lane_offset&quot;: 1
+  },
+  {
+    &quot;id&quot;: &quot;f_A3_A2.19&quot;,
+    &quot;x&quot;: 76.3824,
+    &quot;y&quot;: -237.3591,
+    &quot;rel_pos&quot;: 27.9798,
+    &quot;speed&quot;: 11.0268,
+    &quot;lane_offset&quot;: 0
+  }
+]</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object (10)<span class="dataset-cell-excerpt"
+                            >{ &quot;collided&quot;: false, &quot;arrived&quot;: false,
+                            &quot;lane_before&quot;: 1, &quot;lane…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;collided&quot;: false,
+  &quot;arrived&quot;: false,
+  &quot;lane_before&quot;: 1,
+  &quot;lane_after&quot;: 1,
+  &quot;red_light_violation&quot;: false,
+  &quot;wrong_lane&quot;: false,
+  &quot;collision_partner_id&quot;: null,
+  &quot;collision_partner_type&quot;: null,
+  &quot;collision_partner_speed&quot;: null,
+  &quot;ego_is_collider&quot;: null
+}</pre>
+                      </details>
+                    </td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="dataset-scalar">0</span></td>
+                    <td><span class="dataset-scalar">8</span></td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array · truncated<span class="dataset-cell-excerpt"
+                            >[ 0.8228, 1, 1, -1, -1, -0.0217, -0.1243, -1, -1, 0.4562, -0.0…</span
+                          >
+                        </summary>
+
+                        <pre>
+[
+  0.8228,
+  1,
+  1,
+  -1,
+  -1,
+  -0.0217,
+  -0.1243,
+  -1,
+  -1,
+  0.4562,
+  -0.0246,
+  -1,
+  -1,
+  1,
+  1,
+  -1,
+  -1,
+  1,
+  1,
+  -1,
+  -1,
+  1,
+  1,
+  1,
+  1,
+  -1,
+  0,
+  0.15,
+  0.15,
+  0,
+  1,
+  0,
+  0,
+  0,
+  0,
+  1,
+  0.2732,
+  -0.0002,
+  1,
+  1,
+  0.3686,
+  0.0001,
+  -1,
+  0,
+  -1,
+  0,
+  -1,
+  0,
+  -1,
+  -...</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array (2)
+                          <span class="dataset-cell-excerpt">[ -0.2984649539, 0 ]</span>
+                        </summary>
+                        <pre>
+[
+  -0.2984649539,
+  0
+]</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object (4)<span class="dataset-cell-excerpt"
+                            >{ &quot;accel_raw&quot;: -0.2984649539, &quot;lane_change_raw&quot;: 0,
+                            &quot;lane_chan…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;accel_raw&quot;: -0.2984649539,
+  &quot;lane_change_raw&quot;: 0,
+  &quot;lane_change&quot;: 0,
+  &quot;lane_change_applied&quot;: true
+}</pre>
+                      </details>
+                    </td>
+                    <td><span class="dataset-scalar">-0.0001</span></td>
+                    <td><span class="dataset-scalar">false</span></td>
+                    <td><span class="dataset-scalar">false</span></td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object · truncated<span class="dataset-cell-excerpt"
+                            >{ &quot;ego_alive&quot;: true, &quot;ego_x&quot;: 82.5195,
+                            &quot;ego_y&quot;: -258.7618, &quot;eg…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;ego_alive&quot;: true,
+  &quot;ego_x&quot;: 82.5195,
+  &quot;ego_y&quot;: -258.7618,
+  &quot;ego_speed&quot;: 11.4287,
+  &quot;ego_lane&quot;: 1,
+  &quot;ego_lane_id&quot;: &quot;A3_in1_1&quot;,
+  &quot;ego_road_id&quot;: &quot;A3_in1&quot;,
+  &quot;ego_lane_pos&quot;: 48.5079,
+  &quot;vehicles&quot;: [
+    {
+      &quot;id&quot;: &quot;ego&quot;,
+      &quot;x&quot;: 82.5195,
+      &quot;y&quot;: -258.7618,
+      &quot;speed&quot;: 11.4287,
+      &quot;lane&quot;: 1,
+      &quot;...</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array (2)<span class="dataset-cell-excerpt"
+                            >[ { &quot;id&quot;: &quot;lf_RING_A3_A5.19&quot;, &quot;x&quot;:
+                            78.3605, &quot;y&quot;: -255.8865, &quot;r…</span
+                          >
+                        </summary>
+
+                        <pre>
+[
+  {
+    &quot;id&quot;: &quot;lf_RING_A3_A5.19&quot;,
+    &quot;x&quot;: 78.3605,
+    &quot;y&quot;: -255.8865,
+    &quot;rel_pos&quot;: 3.9147,
+    &quot;speed&quot;: 9.7017,
+    &quot;lane_offset&quot;: 1
+  },
+  {
+    &quot;id&quot;: &quot;f_A3_A2.19&quot;,
+    &quot;x&quot;: 74.8544,
+    &quot;y&quot;: -232.0306,
+    &quot;rel_pos&quot;: 27.8088,
+    &quot;speed&quot;: 11.0868,
+    &quot;lane_offset&quot;: 0
+  }
+]</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object (10)<span class="dataset-cell-excerpt"
+                            >{ &quot;collided&quot;: false, &quot;arrived&quot;: false,
+                            &quot;lane_before&quot;: 1, &quot;lane…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;collided&quot;: false,
+  &quot;arrived&quot;: false,
+  &quot;lane_before&quot;: 1,
+  &quot;lane_after&quot;: 1,
+  &quot;red_light_violation&quot;: false,
+  &quot;wrong_lane&quot;: false,
+  &quot;collision_partner_id&quot;: null,
+  &quot;collision_partner_type&quot;: null,
+  &quot;collision_partner_speed&quot;: null,
+  &quot;ego_is_collider&quot;: null
+}</pre>
+                      </details>
+                    </td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="dataset-scalar">0</span></td>
+                    <td><span class="dataset-scalar">9</span></td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array · truncated<span class="dataset-cell-excerpt"
+                            >[ 0.7648, 1, 1, -1, -1, -0.0272, -0.0397, -1, -1, 0.4613, 0.03…</span
+                          >
+                        </summary>
+
+                        <pre>
+[
+  0.7648,
+  1,
+  1,
+  -1,
+  -1,
+  -0.0272,
+  -0.0397,
+  -1,
+  -1,
+  0.4613,
+  0.0371,
+  -1,
+  -1,
+  1,
+  1,
+  -1,
+  -1,
+  1,
+  1,
+  -1,
+  -1,
+  1,
+  1,
+  1,
+  1,
+  -1,
+  0,
+  0.15,
+  0.15,
+  0,
+  1,
+  0,
+  0,
+  0,
+  0,
+  1,
+  0.265,
+  -0.0002,
+  1,
+  1,
+  0.3604,
+  0.0001,
+  -1,
+  0,
+  -1,
+  0,
+  -1,
+  0,
+  -1,
+  -0....</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array (2)
+                          <span class="dataset-cell-excerpt">[ -0.4059639871, 0 ]</span>
+                        </summary>
+                        <pre>
+[
+  -0.4059639871,
+  0
+]</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object (4)<span class="dataset-cell-excerpt"
+                            >{ &quot;accel_raw&quot;: -0.4059639871, &quot;lane_change_raw&quot;: 0,
+                            &quot;lane_chan…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;accel_raw&quot;: -0.4059639871,
+  &quot;lane_change_raw&quot;: 0,
+  &quot;lane_change&quot;: 0,
+  &quot;lane_change_applied&quot;: true
+}</pre>
+                      </details>
+                    </td>
+                    <td><span class="dataset-scalar">-0.0001</span></td>
+                    <td><span class="dataset-scalar">false</span></td>
+                    <td><span class="dataset-scalar">false</span></td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object · truncated<span class="dataset-cell-excerpt"
+                            >{ &quot;ego_alive&quot;: true, &quot;ego_x&quot;: 81.0555,
+                            &quot;ego_y&quot;: -253.6562, &quot;eg…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;ego_alive&quot;: true,
+  &quot;ego_x&quot;: 81.0555,
+  &quot;ego_y&quot;: -253.6562,
+  &quot;ego_speed&quot;: 10.6228,
+  &quot;ego_lane&quot;: 1,
+  &quot;ego_lane_id&quot;: &quot;A3_in1_1&quot;,
+  &quot;ego_road_id&quot;: &quot;A3_in1&quot;,
+  &quot;ego_lane_pos&quot;: 53.8194,
+  &quot;vehicles&quot;: [
+    {
+      &quot;id&quot;: &quot;ego&quot;,
+      &quot;x&quot;: 81.0555,
+      &quot;y&quot;: -253.6562,
+      &quot;speed&quot;: 10.6228,
+      &quot;lane&quot;: 1,
+      &quot;...</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Array (2)<span class="dataset-cell-excerpt"
+                            >[ { &quot;id&quot;: &quot;lf_RING_A3_A5.19&quot;, &quot;x&quot;:
+                            76.9725, &quot;y&quot;: -251.0457, &quot;r…</span
+                          >
+                        </summary>
+
+                        <pre>
+[
+  {
+    &quot;id&quot;: &quot;lf_RING_A3_A5.19&quot;,
+    &quot;x&quot;: 76.9725,
+    &quot;y&quot;: -251.0457,
+    &quot;rel_pos&quot;: 3.6389,
+    &quot;speed&quot;: 10.0714,
+    &quot;lane_offset&quot;: 1
+  },
+  {
+    &quot;id&quot;: &quot;f_A3_A2.19&quot;,
+    &quot;x&quot;: 73.3193,
+    &quot;y&quot;: -226.677,
+    &quot;rel_pos&quot;: 28.0668,
+    &quot;speed&quot;: 11.1387,
+    &quot;lane_offset&quot;: 0
+  }
+]</pre>
+                      </details>
+                    </td>
+                    <td>
+                      <details class="dataset-value">
+                        <summary>
+                          Object (10)<span class="dataset-cell-excerpt"
+                            >{ &quot;collided&quot;: false, &quot;arrived&quot;: false,
+                            &quot;lane_before&quot;: 1, &quot;lane…</span
+                          >
+                        </summary>
+
+                        <pre>
+{
+  &quot;collided&quot;: false,
+  &quot;arrived&quot;: false,
+  &quot;lane_before&quot;: 1,
+  &quot;lane_after&quot;: 1,
+  &quot;red_light_violation&quot;: false,
+  &quot;wrong_lane&quot;: false,
+  &quot;collision_partner_id&quot;: null,
+  &quot;collision_partner_type&quot;: null,
+  &quot;collision_partner_speed&quot;: null,
+  &quot;ego_is_collider&quot;: null
+}</pre>
+                      </details>
+                    </td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                    <td><span class="dataset-scalar dataset-null">null</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="dataset-preview-footer">
+              End of preview · The full dataset is available on Hugging Face.
+            </p>
+          </div>
           <h3>Download and Use</h3>
           <p>
             Download the first batch with the Hugging Face CLI, then load its arrays as shown below.
