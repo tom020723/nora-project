@@ -6,7 +6,7 @@
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO">
-  <meta name="description" content="제주 노형오거리 SUMO 환경에서 IDM 전문가 기반 행동 복제와 Anchored PPO로 학습한 자율주행 정책. 7,050건 테스트에서 성공률 96.84%.">
+  <meta name="description" content="제주 노형오거리 SUMO 환경에서 IDM 전문가 기반 행동 복제와 Anchored PPO로 학습한 자율주행 정책. 7,050건 테스트에서 성공률 97.21%.">
   <meta name="keywords" content="NORA, SUMO, Nohyeong, autonomous driving, behavior cloning, Anchored PPO, reinforcement learning">
   <meta name="robots" content="index, follow">
   <meta name="language" content="Korean">
@@ -18,7 +18,7 @@
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="성균관대학교">
   <meta property="og:title" content="NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO">
-  <meta property="og:description" content="제주 노형오거리 SUMO 환경에서 IDM 전문가 기반 행동 복제와 Anchored PPO로 학습한 자율주행 정책. 7,050건 테스트에서 성공률 96.84%.">
+  <meta property="og:description" content="제주 노형오거리 SUMO 환경에서 IDM 전문가 기반 행동 복제와 Anchored PPO로 학습한 자율주행 정책. 7,050건 테스트에서 성공률 97.21%.">
   <meta property="og:url" content="https://tom020723.github.io/nora-project/">
   <meta property="og:image" content="https://tom020723.github.io/nora-project/static/images/final3-method_overview.png">
   <meta property="og:image:alt" content="NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO - Research Preview">
@@ -30,7 +30,7 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO">
-  <meta name="twitter:description" content="제주 노형오거리 SUMO 환경에서 IDM 전문가 기반 행동 복제와 Anchored PPO로 학습한 자율주행 정책. 7,050건 테스트에서 성공률 96.84%.">
+  <meta name="twitter:description" content="제주 노형오거리 SUMO 환경에서 IDM 전문가 기반 행동 복제와 Anchored PPO로 학습한 자율주행 정책. 7,050건 테스트에서 성공률 97.21%.">
   <meta name="twitter:image" content="https://tom020723.github.io/nora-project/static/images/final3-method_overview.png">
   <meta name="twitter:image:alt" content="NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO - Research Preview">
 
@@ -92,8 +92,8 @@
   "@context": "https://schema.org",
   "@type": "CreativeWork",
   "name": "NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO",
-  "description": "제주 노형오거리 SUMO 환경에서 IDM 전문가 기반 행동 복제와 Anchored PPO로 학습한 자율주행 정책. 7,050건 테스트에서 성공률 96.84%.",
-  "abstract": "NORA는 제주 노형오거리를 재현한 SUMO 환경에서 자율주행 차량이 주어진 경로를 완주하도록 학습하는 프로젝트입니다. 24개 경로와 다양한 출발 차선에서 신호 준수, 차선 선택, 주변 차량과의 상호작용을 함께 다룹니다. IDM 배경 차량에서 선별한 48만 개 궤적, 98,759,227개의 상태–행동 쌍으로 행동 복제(BC) 정책을 학습하고, BC 정책과의 KL anchor를 사용하는 PPO로 미세 조정합니다. 정책은 52차원 부분관측을 받아 가감속과 차선변경을 결정하며, 자율주행 차량에는 자동 신호 준수나 차선변경 안전 게이트를 적용하지 않습니다. 검증 세트로 선택한 PPO 체크포인트는 교차로 내부 충돌을 포함한 7,050건 테스트에서 96.84%의 성공률을 기록했습니다. BC 단독의 90.79%보다 6.04%p 높으며, 적색 신호 위반은 317건에서 20건으로 감소했습니다.",
+  "description": "제주 노형오거리 SUMO 환경에서 IDM 전문가 기반 행동 복제와 Anchored PPO로 학습한 자율주행 정책. 7,050건 테스트에서 성공률 97.21%.",
+  "abstract": "NORA는 제주 노형오거리를 재현한 SUMO 환경에서 자율주행 차량이 주어진 경로를 완주하도록 학습하는 프로젝트입니다. 24개 경로와 다양한 출발 차선에서 신호 준수, 차선 선택, 주변 차량과의 상호작용을 함께 다룹니다. IDM 배경 차량에서 선별한 48만 개 궤적, 98,759,227개의 상태–행동 쌍으로 행동 복제(BC) 정책을 학습하고, BC 정책과의 KL anchor를 사용하는 PPO로 미세 조정합니다. 정책은 52차원 부분관측을 받아 가감속과 차선변경을 결정하며, 신호 준수와 안전한 차선변경은 학습된 정책이 직접 판단합니다. 검증 세트로 선택한 PPO 체크포인트는 교차로 내부 충돌을 포함한 7,050건 테스트에서 97.21%의 성공률을 기록했습니다. BC 단독의 90.79%보다 6.41%p 높으며, 적색 신호 위반은 317건에서 30건으로 감소했습니다.",
   "inLanguage": "ko",
   "url": "https://tom020723.github.io/nora-project/",
   "image": "https://tom020723.github.io/nora-project/static/images/final3-method_overview.png",
@@ -102,7 +102,7 @@
     "@type": "CollegeOrUniversity",
     "name": "Sungkyunkwan University"
   },
-  "isBasedOn": "https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/tree/584919da260bed37cc2bc48a307274393002df7e"
+  "isBasedOn": "https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/tree/main"
 }
   </script>
 </head>
@@ -133,14 +133,17 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO</h1>
             <div class="is-size-5 publication-authors">
-                          <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">저자 1</a><sup>*</sup>,
+              <span class="author-block">
+                최제혁<sup>*</sup>,
               </span>
               <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">저자 2</a><sup>*</sup>,
+                김건남<sup>*</sup>,
               </span>
               <span class="author-block">
-                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">저자 3</a>
+                김윤재<sup>*</sup>,
+              </span>
+              <span class="author-block">
+                배승준<sup>*</sup>
               </span>
             </div>
             <div class="is-size-5 publication-authors">
@@ -152,7 +155,7 @@
             <div class="column has-text-centered">
               <div class="publication-links">
                 <span class="link-block">
-                  <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/tree/final3" target="_blank" rel="noopener noreferrer"
+                  <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/tree/main" target="_blank" rel="noopener noreferrer"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="fab fa-github"></i></span>
                     <span>GitHub</span>
@@ -187,7 +190,7 @@
     <div class="hero-body">
       <video class="project-teaser" controls autoplay muted loop playsinline preload="metadata" aria-label="프로젝트 대표 주행 영상">
         <source src="static/videos/Project-teaser.mp4" type="video/mp4">
-        브라우저가 동영상 재생을 지원하지 않습니다. <a href="static/videos/Project-teaser.mp4">영상을 다운로드하세요.</a>
+        대표 주행 영상: <a href="static/videos/Project-teaser.mp4">영상을 다운로드하세요.</a>
       </video>
       <p class="subtitle has-text-centered">제주 노형의 도로를 반영한 SUMO 환경에서 자율주행 의사결정을 학습합니다.</p>
     </div>
@@ -197,7 +200,7 @@
 <section class="section hero is-light" id="abstract">
 <div class="container is-max-desktop content">
 <h2 class="title is-3">초록</h2>
-<p>NORA는 제주 노형오거리를 재현한 SUMO 환경에서 자율주행 차량이 주어진 경로를 완주하도록 학습하는 프로젝트입니다. 24개 경로와 다양한 출발 차선에서 신호 준수, 차선 선택, 주변 차량과의 상호작용을 함께 다룹니다. IDM 배경 차량에서 선별한 48만 개 궤적, 98,759,227개의 상태–행동 쌍으로 행동 복제(BC) 정책을 학습하고, BC 정책과의 KL anchor를 사용하는 PPO로 미세 조정합니다. 정책은 52차원 부분관측을 받아 가감속과 차선변경을 결정하며, 자율주행 차량에는 자동 신호 준수나 차선변경 안전 게이트를 적용하지 않습니다. 검증 세트로 선택한 PPO 체크포인트는 교차로 내부 충돌을 포함한 7,050건 테스트에서 96.84%의 성공률을 기록했습니다. BC 단독의 90.79%보다 6.04%p 높으며, 적색 신호 위반은 317건에서 20건으로 감소했습니다.</p>
+<p>NORA는 제주 노형오거리를 재현한 SUMO 환경에서 자율주행 차량이 주어진 경로를 완주하도록 학습하는 프로젝트입니다. 24개 경로와 다양한 출발 차선에서 신호 준수, 차선 선택, 주변 차량과의 상호작용을 함께 다룹니다. IDM 배경 차량에서 선별한 48만 개 궤적, 98,759,227개의 상태–행동 쌍으로 행동 복제(BC) 정책을 학습하고, BC 정책과의 KL anchor를 사용하는 PPO로 미세 조정합니다. 정책은 52차원 부분관측을 받아 가감속과 차선변경을 결정하며, 신호 준수와 안전한 차선변경은 학습된 정책이 직접 판단합니다. 검증 세트로 선택한 PPO 체크포인트는 교차로 내부 충돌을 포함한 7,050건 테스트에서 97.21%의 성공률을 기록했습니다. BC 단독의 90.79%보다 6.41%p 높으며, 적색 신호 위반은 317건에서 30건으로 감소했습니다.</p>
 </div>
 </section>
 
@@ -207,7 +210,7 @@
 <p>목표는 주변 교통을 관측하면서 지정된 경로의 마지막 도로 끝까지 도착하는 것입니다. 중앙 교차로를 지나는 19개 경로와 순환도로 5개 경로를 사용하며, 같은 경로도 출발 차선과 교통 상태에 따라 다른 판단이 필요합니다.</p>
 <ul>
 <li><strong>전문가에서 출발:</strong> 혼합 교통 속 IDM 차량의 주행을 모방학습으로 익힙니다.</li>
-<li><strong>실패를 줄이는 미세 조정:</strong> BC에서 크게 벗어나지 않도록 anchor를 두고, 도착·충돌·신호 위반 등 사건 보상으로 PPO를 학습합니다.</li>
+<li><strong>실패를 줄이는 미세 조정:</strong> BC 정책을 기준으로 학습 방향을 유지하는 anchor를 두고, 도착·충돌·신호 위반 등 사건 보상으로 PPO를 학습합니다.</li>
 <li><strong>분리된 평가:</strong> 학습과 다른 교통 seed로 검증·테스트 세트를 만들고, 검증 결과로 최종 모델을 선택합니다.</li>
 </ul>
 </div>
@@ -282,9 +285,9 @@
 </tbody>
 </table>
 </div>
-<p>주변 차량은 50 m, 신호는 100 m 범위에서 관측합니다. 길안내는 다음에 갈 <em>도로</em>의 방향과 거리를 제공하지만, 경로에 맞는 차선을 직접 알려주지는 않습니다. 관측의 차선 연결 정보도 경로와 무관한 물리적 연결만 나타냅니다.</p>
+<p>주변 차량은 50 m, 신호는 100 m 범위에서 관측합니다. 길안내는 다음에 갈 <em>도로</em>의 방향과 거리를 제공하고, 경로에 맞는 차선은 정책이 선택합니다. 차선 연결 관측은 물리적 연결을 나타내며, 경로 안내와 함께 주행 판단에 활용됩니다.</p>
 <h3>하이브리드 행동</h3>
-<p>공유 MLP(52 → 256 → 256, ReLU)가 연속 가감속과 왼쪽·유지·오른쪽의 세 가지 차선 행동을 출력합니다. 가감속 범위는 ±5.4 m/s²입니다. 평가에서는 가감속 평균과 차선 argmax를 사용합니다. Ego의 자동 감속·신호 준수·차선변경 안전 게이트는 꺼져 있으며, 없는 차선으로의 변경 등 물리적으로 불가능한 명령만 실행하지 않습니다.</p>
+<p>공유 MLP(52 → 256 → 256, ReLU)가 연속 가감속과 왼쪽·유지·오른쪽의 세 가지 차선 행동을 출력합니다. 가감속 범위는 ±5.4 m/s²입니다. 평가에서는 가감속 평균과 차선 argmax를 사용합니다. Ego의 자동 감속·신호 준수·차선변경 안전 게이트를 끈 상태에서 정책 명령으로 주행합니다. 명령은 실제 존재하는 차선과 차량의 물리적 행동 범위 안에서 적용됩니다.</p>
 <h3>BC에서 Anchored PPO로</h3>
 <p>BC는 가감속 MSE와 클래스 가중 차선 교차 엔트로피로 학습합니다. PPO actor는 BC 가중치로 초기화하고, 고정된 BC 정책과의 KL anchor(계수 0.03)를 추가합니다. 별도 critic은 첫 5회 반복 동안 먼저 학습합니다. 이후 512개 환경을 16개 SUMO 프로세스로 실행하여 100회 반복, 총 3,276,800개 전이를 수집합니다.</p>
 <h3>사건 기반 보상</h3>
@@ -310,7 +313,7 @@
 </tbody>
 </table>
 </div>
-<p>속도나 진행 자체에 대한 보상은 사용하지 않습니다. 자세한 관측 정의와 하이퍼파라미터는 <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/584919da260bed37cc2bc48a307274393002df7e/docs/ALGORITHM.md" target="_blank" rel="noopener noreferrer">Algorithm</a>.</p>
+<p>보상은 도착과 안전 관련 사건, 정확한 정지, 차선변경 횟수에 초점을 맞춥니다. 정지 보너스는 목표 정지 위치에서 멀어질수록 절댓값 지수 형태로 감소합니다. 자세한 관측 정의와 학습 설정은 <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/ALGORITHM.md" target="_blank" rel="noopener noreferrer">알고리즘 문서</a>에서 확인할 수 있습니다.</p>
 </div>
 </section>
 
@@ -328,12 +331,12 @@
 <tbody>
 <tr><th scope="row">BC</th><td>90.79%</td><td>6401</td><td>120</td><td>317</td><td>200</td><td>12</td>
 </tr>
-<tr><th scope="row">BC → Anchored PPO (iter 80)</th><td>96.84%</td><td>6827</td><td>89</td><td>20</td><td>103</td><td>11</td>
+<tr><th scope="row">BC → Anchored PPO (iter 60)</th><td>97.21%</td><td>6853</td><td>73</td><td>30</td><td>83</td><td>11</td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>성공률은 반올림 전 수치 기준 <strong>6.04%p</strong> 개선됐고, 적색 신호 위반은 <strong>317 → 20건</strong>으로 줄었습니다. 충돌률은 1.70%에서 1.26%로 감소했습니다. 평균 속도는 BC 7.75 m/s, PPO 7.32 m/s로, 성능 개선이 더 높은 평균 속도를 의미하지는 않습니다.</p>
+<p>성공률은 반올림 전 수치 기준 <strong>6.41%p</strong> 개선됐고, 적색 신호 위반은 <strong>317 → 30건</strong>으로 줄었습니다. 충돌률은 1.70%에서 1.04%로 감소했습니다. 평균 속도는 BC 7.75 m/s, PPO 7.21 m/s로, PPO는 이 조건에서 더 낮은 평균 속도와 더 높은 완주 성공률을 보였습니다.</p>
 <div class="columns">
 <div class="column">
 <figure class="project-figure"><a href="static/images/final3-fig_success.png" target="_blank" rel="noopener noreferrer"><img src="static/images/final3-fig_success.png" alt="Success rate comparison with 95% confidence intervals" loading="lazy"></a>
@@ -347,7 +350,7 @@
 </div>
 </div>
 <h3>검증으로 선택한 체크포인트</h3>
-<p>반복 50–100의 체크포인트를 검증한 뒤, 검증 성공률 96.49%의 반복 80 모델을 선택했습니다. 마지막 반복 100의 테스트 성공률은 93.38%이므로, 마지막 모델을 자동으로 최종 모델로 사용하지 않습니다. 고정 경로 평가 1,800건은 PPO 학습 교통 상태와 겹치므로 최종 PPO 비교에 사용하지 않습니다.</p>
+<p>반복 50–100의 체크포인트를 검증한 뒤, 검증 성공률 96.81%의 반복 60 모델을 선택했습니다. 이 모델의 테스트 성공률은 97.21%로, 마지막 반복 100의 95.83%보다 높았습니다. 최종 비교는 학습 교통과 분리된 검증·테스트 세트를 사용합니다. 고정 경로 1,800건은 학습 교통 상태와 겹치는 초기 BC 점검용 세트입니다.</p>
 <figure class="project-figure"><a href="static/images/final3-fig_validation.png" target="_blank" rel="noopener noreferrer"><img src="static/images/final3-fig_validation.png" alt="Validation success across PPO checkpoints" loading="lazy"></a>
 <figcaption>검증 성공률에 따른 모델 선택</figcaption>
 </figure>
@@ -357,33 +360,31 @@
 <figcaption>BC 및 PPO 학습 기록</figcaption>
 </figure>
 </details>
-<p class="source-note">평가 원본: <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/584919da260bed37cc2bc48a307274393002df7e/results/final/BC/evaluation_diverse_start_lanes/evaluation_summary.json" target="_blank" rel="noopener noreferrer">BC JSON</a> · <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/584919da260bed37cc2bc48a307274393002df7e/results/final/PPO/eval_runs/iter080/evaluation_diverse_start_lanes/evaluation_summary.json" target="_blank" rel="noopener noreferrer">PPO JSON</a> · <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/584919da260bed37cc2bc48a307274393002df7e/results/final/PPO/selection.json" target="_blank" rel="noopener noreferrer">Checkpoint selection</a>
+<p class="source-note">평가 원본: <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/results/final/BC/evaluation_diverse_start_lanes/evaluation_summary.json" target="_blank" rel="noopener noreferrer">BC JSON</a> · <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/results/final/PPO/eval_runs/iter060/evaluation_diverse_start_lanes/evaluation_summary.json" target="_blank" rel="noopener noreferrer">PPO JSON</a> · <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/results/final/PPO/selection.json" target="_blank" rel="noopener noreferrer">Checkpoint selection</a>
 </p>
 </div>
 </section>
 
 <section class="section" id="dataset">
 <div class="container is-max-desktop content">
-<h2 class="title is-3">Road Driving Dataset</h2>
-<p>BC 학습에는 IDM 전문가의 <strong>48만 개 궤적과 98,759,227개 상태–행동 쌍</strong>을 사용했습니다. Krauss·EIDM·ACC 차량은 배경 교통으로 남고, 전문가 라벨은 IDM 차량에서만 얻습니다. 전문가 차량과 정책은 같은 관측 함수를 사용합니다.</p>
-<div class="table-container">
-<table class="table is-fullwidth">
-<thead>
-<tr><th scope="col">분할</th><th scope="col">궤적</th><th scope="col">상태–행동 쌍</th>
-</tr>
-</thead>
-<tbody>
-<tr><th scope="row">학습</th><td>456,000</td><td>93,805,940</td>
-</tr>
-<tr><th scope="row">검증</th><td>24,000</td><td>4,953,287</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>24개 경로마다 학습 궤적 19,000개, 검증 궤적 1,000개를 선별합니다. 학습·검증은 시뮬레이션 실행 단위로 분리하며, 한 실행의 표본이 두 분할에 섞이지 않도록 합니다. 데이터는 NPZ shard 형식이고, 관측과 정규화된 가감속·차선변경 라벨을 담습니다. 학습 데이터에서 차선변경은 약 0.73%이므로 클래스 가중 손실로 불균형을 보정합니다.</p>
-<p>위 규모는 final3의 최종 BC 학습 데이터 기준입니다. 저장소에는 manifest·설정·SHA-256 목록이 포함되어 있으며, NPZ shard 자체는 Git에 포함되지 않습니다. 공개 데이터셋은 아래 Hugging Face 링크에서 별도로 확인할 수 있습니다.</p>
-<p><a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/584919da260bed37cc2bc48a307274393002df7e/results/final/BC/dataset/manifest.json" target="_blank" rel="noopener noreferrer">Dataset manifest</a> · <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/584919da260bed37cc2bc48a307274393002df7e/results/final/BC/dataset/SHA256SUMS" target="_blank" rel="noopener noreferrer">SHA-256</a>
-</p><a class="button is-dark is-rounded" href="https://huggingface.co/datasets/skku-av-team7/Nohyeong-AV" target="_blank" rel="noopener noreferrer">Hugging Face에서 데이터셋 보기</a>
+<h2 class="title is-3">Nohyeong-AV 공개 주행 데이터셋</h2>
+<p>학습한 PPO 정책(iter060)이 노형오거리를 주행하며 기록한 <strong>10,000,262개 POMDP 전이, 62,457개 에피소드</strong>를 Hugging Face에 공개했습니다. 정책이 관측한 정보와 행동·보상, 시뮬레이터의 전체 차량 상태·신호·사건을 함께 제공합니다.</p>
+<p>32개 배치로 구성되며, 각 배치에는 학습용 NPZ, 전체 기록 JSONL.GZ, 수집 설정 metadata.json, SUMO 도로·경로 파일이 들어 있습니다. 수집 조건은 SUMO 1.27.1, 0.5초 간격, 시간당 4,700대, 250초 예열이며, 출발 차선과 신호 시작 시점을 무작위화하고 교차로 내부 충돌을 검사했습니다. 데이터셋 라이선스는 <strong>CC BY 4.0</strong>입니다.</p>
+<ul><li><strong>NPZ:</strong> 52차원 observation·next_observation, 2차원 action_raw, reward, terminated·truncated, episode·t, 주변 차량 좌표를 제공합니다.</li><li><strong>JSONL.GZ:</strong> 차량 전체 상태, 관측 신호와 진입로별 신호, 충돌 상대, 차선변경, 경로 정보를 포함합니다.</li><li><strong>에피소드 식별:</strong> 배치마다 episode 번호가 0부터 시작하므로 <code>(batch, episode)</code> 조합으로 구분합니다.</li></ul>
+<p>수집 에피소드 중 61,304건(98.15%)이 목적지에 도착했고, 충돌 819건, 적색 신호 위반 171건, 경로 밖 차선·자차 소실 163건을 포함합니다. 이 비율은 <strong>공개 데이터의 수집 분포</strong>이며, 앞서 제시한 고정 테스트 7,050건의 성능과는 평가 조건과 목적이 다릅니다.</p>
+<h3>다운로드 및 사용</h3>
+<p>Hugging Face CLI로 첫 배치를 내려받은 뒤 다음 예시로 읽을 수 있습니다.</p>
+<pre><code>hf download skku-av-team7/Nohyeong-AV --repo-type dataset \
+  --local-dir nohyeong-av --include "data/batch_0000/*"</code></pre>
+<pre><code>import numpy as np
+
+with np.load("nohyeong-av/data/batch_0000/ppo_0000.npz") as data:
+    observations = data["observation"]
+    actions = data["action_raw"]
+    rewards = data["reward"]</code></pre>
+<p><a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/data_columns_submission.md" target="_blank" rel="noopener noreferrer">데이터 컬럼 상세</a> · <a href="https://huggingface.co/datasets/skku-av-team7/Nohyeong-AV/tree/main/data" target="_blank" rel="noopener noreferrer">공개 파일 목록</a></p>
+<a class="button is-dark is-rounded" href="https://huggingface.co/datasets/skku-av-team7/Nohyeong-AV" target="_blank" rel="noopener noreferrer">Hugging Face에서 데이터셋 보기</a>
+<h3>정책 학습에 사용한 IDM 전문가 데이터</h3><p>BC 사전학습에는 별도로 선별한 IDM 궤적 48만 개, 상태–행동 쌍 98,759,227개를 사용했습니다. 학습은 456,000개 궤적·93,805,940개 표본, 검증은 24,000개 궤적·4,953,287개 표본으로 나눴습니다. 시뮬레이션 실행 단위로 분할하고, 드문 차선변경(약 0.73%)은 클래스 가중 손실로 보정했습니다. 이 전문가 데이터는 위 공개 PPO 주행 기록과 수집 주체·용도가 다릅니다.</p>
 </div>
 </section>
 
@@ -391,9 +392,9 @@
 <div class="container is-max-desktop content">
 <h2 class="title is-3">한계 및 향후 계획</h2>
 <ul>
-<li><strong>학습과 평가의 차이:</strong> 전문가 수집·PPO 학습은 교차로 내부 충돌 검사를 끈 상태이며, 본문에 보고한 평가는 이를 켠 결과입니다. 현재 관측은 교차로 내부의 모든 상충 차량을 직접 표현하지 않습니다.</li>
-<li><strong>단일 지역·설정:</strong> 결과는 노형 도로망, 설정된 교통량·신호, 최종 seed 0 학습 실행에 해당합니다. 다른 지역이나 실제 도로로의 일반화는 검증하지 않았습니다.</li>
-<li><strong>남아 있는 실패:</strong> 최종 테스트에서도 충돌 89건, 적색 신호 위반 20건이 발생했습니다. 다음 단계는 상충 차량 관측과 미검증 교통 조건에 대한 평가를 확장하는 것입니다.</li>
+<li><strong>학습과 평가의 차이:</strong> 전문가 수집·PPO 학습은 교차로 내부 충돌 검사를 끈 상태이며, 본문에 보고한 평가는 이를 켠 결과입니다. 현재 관측은 차선 주변 차량과 합류 차량 중심이므로, 교차로 내부 상충 차량을 더 풍부하게 표현하는 방향으로 확장할 수 있습니다.</li>
+<li><strong>단일 지역·설정:</strong> 결과는 노형 도로망, 설정된 교통량·신호, 최종 seed 0 학습 실행에 해당합니다. 다른 지역과 실제 도로로 적용 범위를 넓히려면 추가 검증이 필요합니다.</li>
+<li><strong>남아 있는 실패:</strong> 최종 테스트에서는 충돌 73건, 적색 신호 위반 30건이 발생했습니다. 다음 단계는 상충 차량 관측과 미검증 교통 조건에 대한 평가를 확장하는 것입니다.</li>
 <li><strong>재현 환경:</strong> PyTorch·CUDA 빌드 차이의 작은 수치 오차가 장기 주행과 학습 결과를 바꿀 수 있습니다. 정확한 재현에는 문서에 기록된 단계별 환경이 필요합니다.</li>
 </ul>
 </div>
@@ -402,11 +403,11 @@
 <section class="section" id="reproducibility">
 <div class="container is-max-desktop content">
 <h2 class="title is-3">재현 및 자료</h2>
-<p>평가 세트 생성 → 전문가 수집 → BC 학습 → PPO 미세 조정 → 검증·테스트를 하나의 스크립트로 실행할 수 있습니다. 저장된 모델·설정·평가 결과는 final3 브랜치의 <code>results/final/</code>에 포함되어 있습니다.</p>
+<p>평가 세트 생성 → 전문가 수집 → BC 학습 → PPO 미세 조정 → 검증·테스트를 하나의 스크립트로 실행할 수 있습니다. 저장된 모델·설정·평가 결과는 main 브랜치의 <code>results/final/</code>에 포함되어 있습니다.</p>
 <pre><code>SMOKE=1 bash scripts/reproduce_pipeline.sh
 bash scripts/reproduce_pipeline.sh</code>
 </pre>
-<p><a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/584919da260bed37cc2bc48a307274393002df7e/docs/REPRODUCE.md" target="_blank" rel="noopener noreferrer">재현 환경과 전체 명령</a> · <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/584919da260bed37cc2bc48a307274393002df7e/docs/ALGORITHM.md" target="_blank" rel="noopener noreferrer">알고리즘 상세</a> · <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/584919da260bed37cc2bc48a307274393002df7e/docs/report/report_ko.tex" target="_blank" rel="noopener noreferrer">보고서 원문 (LaTeX)</a>
+<p><a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/REPRODUCE.md" target="_blank" rel="noopener noreferrer">재현 환경과 전체 명령</a> · <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/ALGORITHM.md" target="_blank" rel="noopener noreferrer">알고리즘 상세</a> · <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/report/report_ko.tex" target="_blank" rel="noopener noreferrer">보고서 원문 (LaTeX)</a>
 </p>
 </div>
 </section>
@@ -414,7 +415,7 @@ bash scripts/reproduce_pipeline.sh</code>
 <section class="section hero is-light" id="acknowledgments">
 <div class="container is-max-desktop content">
 <h2 class="title is-3">기여 및 감사의 글</h2>
-<p>성균관대학교 자율주행인공지능및제어(ICE3052_41) 수업 프로젝트입니다. 수업의 SUMO·PPO 기반 코드에서 출발하여 노형 도로 환경, IDM 전문가 수집, 행동 복제, Anchored PPO, 분리된 평가 세트를 구성했습니다. 저자별 역할은 추후 기재합니다.</p>
+<p>성균관대학교 자율주행인공지능및제어(ICE3052_41) 수업 프로젝트입니다. 수업의 SUMO·PPO 기반 코드에서 출발하여 노형 도로 환경, IDM 전문가 수집, 행동 복제, Anchored PPO, 분리된 평가 세트를 구성했습니다.</p>
 <p>수업 원본: <a href="https://github.com/bmil-ssu/Artificial-Intelligence-and-Control-for-Autonomous-Driving" target="_blank" rel="noopener noreferrer">bmil-ssu</a>.</p>
 </div>
 </section>

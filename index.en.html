@@ -6,7 +6,7 @@
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO">
-  <meta name="description" content="Autonomous driving at Nohyeong, Jeju: IDM demonstrations, behavior cloning and Anchored PPO achieve 96.84% success over 7,050 SUMO test cases.">
+  <meta name="description" content="Autonomous driving at Nohyeong, Jeju: IDM demonstrations, behavior cloning and Anchored PPO achieve 97.21% success over 7,050 SUMO test cases.">
   <meta name="keywords" content="NORA, SUMO, Nohyeong, autonomous driving, behavior cloning, Anchored PPO, reinforcement learning">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
@@ -18,7 +18,7 @@
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Sungkyunkwan University">
   <meta property="og:title" content="NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO">
-  <meta property="og:description" content="Autonomous driving at Nohyeong, Jeju: IDM demonstrations, behavior cloning and Anchored PPO achieve 96.84% success over 7,050 SUMO test cases.">
+  <meta property="og:description" content="Autonomous driving at Nohyeong, Jeju: IDM demonstrations, behavior cloning and Anchored PPO achieve 97.21% success over 7,050 SUMO test cases.">
   <meta property="og:url" content="https://tom020723.github.io/nora-project/index.en.html">
   <meta property="og:image" content="https://tom020723.github.io/nora-project/static/images/final3-method_overview.png">
   <meta property="og:image:alt" content="NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO - Research Preview">
@@ -30,7 +30,7 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO">
-  <meta name="twitter:description" content="Autonomous driving at Nohyeong, Jeju: IDM demonstrations, behavior cloning and Anchored PPO achieve 96.84% success over 7,050 SUMO test cases.">
+  <meta name="twitter:description" content="Autonomous driving at Nohyeong, Jeju: IDM demonstrations, behavior cloning and Anchored PPO achieve 97.21% success over 7,050 SUMO test cases.">
   <meta name="twitter:image" content="https://tom020723.github.io/nora-project/static/images/final3-method_overview.png">
   <meta name="twitter:image:alt" content="NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO - Research Preview">
 
@@ -92,8 +92,8 @@
   "@context": "https://schema.org",
   "@type": "CreativeWork",
   "name": "NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO",
-  "description": "Autonomous driving at Nohyeong, Jeju: IDM demonstrations, behavior cloning and Anchored PPO achieve 96.84% success over 7,050 SUMO test cases.",
-  "abstract": "NORA learns autonomous driving policies in a SUMO reconstruction of Nohyeong, a five-way signalized intersection in Jeju. The task combines route completion, signal compliance, lane selection, and traffic interaction across 24 routes and diverse starting lanes. We train a behavior cloning (BC) policy on 480,000 selected IDM trajectories containing 98,759,227 state–action pairs, then fine-tune it with PPO anchored to the BC policy through a KL penalty. The policy maps a 52-dimensional partial observation to acceleration and lane-change decisions without automatic signal compliance or a lane-change safety gate for the ego vehicle. Selected on a separate validation suite, the PPO checkpoint achieves 96.84% success on 7,050 test cases with junction collisions counted, compared with 90.79% for BC alone. This is a 6.04 percentage-point improvement, while red-light violations fall from 317 to 20.",
+  "description": "Autonomous driving at Nohyeong, Jeju: IDM demonstrations, behavior cloning and Anchored PPO achieve 97.21% success over 7,050 SUMO test cases.",
+  "abstract": "NORA learns autonomous driving policies in a SUMO reconstruction of Nohyeong, a five-way signalized intersection in Jeju. The task combines route completion, signal compliance, lane selection, and traffic interaction across 24 routes and diverse starting lanes. We train a behavior cloning (BC) policy on 480,000 selected IDM trajectories containing 98,759,227 state–action pairs, then fine-tune it with PPO anchored to the BC policy through a KL penalty. The policy maps a 52-dimensional partial observation to acceleration and lane-change decisions, taking responsibility for signal compliance and safe lane selection. Selected on a separate validation suite, the PPO checkpoint achieves 97.21% success on 7,050 test cases with junction collisions counted, compared with 90.79% for BC alone. This is a 6.41 percentage-point improvement, while red-light violations fall from 317 to 30.",
   "inLanguage": "en",
   "url": "https://tom020723.github.io/nora-project/index.en.html",
   "image": "https://tom020723.github.io/nora-project/static/images/final3-method_overview.png",
@@ -102,7 +102,7 @@
     "@type": "CollegeOrUniversity",
     "name": "Sungkyunkwan University"
   },
-  "isBasedOn": "https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/tree/584919da260bed37cc2bc48a307274393002df7e"
+  "isBasedOn": "https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/tree/main"
 }
   </script>
 </head>
@@ -133,14 +133,17 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">NORA: NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO</h1>
             <div class="is-size-5 publication-authors">
-                          <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,
+              <span class="author-block">
+                Jehyeok Choi<sup>*</sup>,
               </span>
               <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,
+                Kunnam Kim<sup>*</sup>,
               </span>
               <span class="author-block">
-                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                Yoonjae Kim<sup>*</sup>,
+              </span>
+              <span class="author-block">
+                Seungjun Bae<sup>*</sup>
               </span>
             </div>
             <div class="is-size-5 publication-authors">
@@ -152,7 +155,7 @@
             <div class="column has-text-centered">
               <div class="publication-links">
                 <span class="link-block">
-                  <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/tree/final3" target="_blank" rel="noopener noreferrer"
+                  <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/tree/main" target="_blank" rel="noopener noreferrer"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="fab fa-github"></i></span>
                     <span>GitHub</span>
@@ -187,7 +190,7 @@
     <div class="hero-body">
       <video class="project-teaser" controls autoplay muted loop playsinline preload="metadata" aria-label="Project teaser driving video">
         <source src="static/videos/Project-teaser.mp4" type="video/mp4">
-        Your browser does not support video playback. <a href="static/videos/Project-teaser.mp4">Download the video.</a>
+        Project teaser: <a href="static/videos/Project-teaser.mp4">Download the video.</a>
       </video>
       <p class="subtitle has-text-centered">Learning autonomous driving decisions in a SUMO environment inspired by Nohyeong, Jeju.</p>
     </div>
@@ -197,7 +200,7 @@
 <section class="section hero is-light" id="abstract">
 <div class="container is-max-desktop content">
 <h2 class="title is-3">Abstract</h2>
-<p>NORA learns autonomous driving policies in a SUMO reconstruction of Nohyeong, a five-way signalized intersection in Jeju. The task combines route completion, signal compliance, lane selection, and traffic interaction across 24 routes and diverse starting lanes. We train a behavior cloning (BC) policy on 480,000 selected IDM trajectories containing 98,759,227 state–action pairs, then fine-tune it with PPO anchored to the BC policy through a KL penalty. The policy maps a 52-dimensional partial observation to acceleration and lane-change decisions without automatic signal compliance or a lane-change safety gate for the ego vehicle. Selected on a separate validation suite, the PPO checkpoint achieves 96.84% success on 7,050 test cases with junction collisions counted, compared with 90.79% for BC alone. This is a 6.04 percentage-point improvement, while red-light violations fall from 317 to 20.</p>
+<p>NORA learns autonomous driving policies in a SUMO reconstruction of Nohyeong, a five-way signalized intersection in Jeju. The task combines route completion, signal compliance, lane selection, and traffic interaction across 24 routes and diverse starting lanes. We train a behavior cloning (BC) policy on 480,000 selected IDM trajectories containing 98,759,227 state–action pairs, then fine-tune it with PPO anchored to the BC policy through a KL penalty. The policy maps a 52-dimensional partial observation to acceleration and lane-change decisions, taking responsibility for signal compliance and safe lane selection. Selected on a separate validation suite, the PPO checkpoint achieves 97.21% success on 7,050 test cases with junction collisions counted, compared with 90.79% for BC alone. This is a 6.41 percentage-point improvement, while red-light violations fall from 317 to 30.</p>
 </div>
 </section>
 
@@ -207,7 +210,7 @@
 <p>The goal is to reach the end of an assigned route while interacting with surrounding traffic. The task covers 19 central-junction routes and five circular-road routes. Different starting lanes and traffic states require different decisions even on the same route.</p>
 <ul>
 <li><strong>Start from demonstrations:</strong> learn from IDM vehicles moving through mixed background traffic.</li>
-<li><strong>Fine-tune to reduce failures:</strong> use event rewards and a BC anchor to improve the policy without unrestricted drift from its initialization.</li>
+<li><strong>Fine-tune to reduce failures:</strong> use event rewards and a BC anchor to improve driving while retaining the demonstrated behavior as a reference.</li>
 <li><strong>Separate selection from testing:</strong> build validation and test suites with traffic seeds distinct from training, and select the final checkpoint on validation results.</li>
 </ul>
 </div>
@@ -282,9 +285,9 @@
 </tbody>
 </table>
 </div>
-<p>Neighboring traffic is observed within 50 m and signals within 100 m. Guidance provides the direction and distance of the next <em>road</em> choices, but does not directly identify a route-compatible lane. Lane-connectivity features represent physical connections independently of the route.</p>
+<p>Neighboring traffic is observed within 50 m and signals within 100 m. Guidance provides the direction and distance of the next <em>road</em> choices, while the policy selects a compatible lane. Lane-connectivity features describe physical connections and complement the route guidance.</p>
 <h3>Hybrid Actions</h3>
-<p>A shared MLP (52 → 256 → 256, ReLU) produces continuous acceleration and three lane choices: left, keep, and right. Acceleration is bounded by ±5.4 m/s². Evaluation uses the acceleration mean and lane argmax. Automatic braking, signal compliance, and lane-change safety gates are disabled for the ego; physically impossible commands, such as changing into a nonexistent lane, cannot execute.</p>
+<p>A shared MLP (52 → 256 → 256, ReLU) produces continuous acceleration and three lane choices: left, keep, and right. Acceleration is bounded by ±5.4 m/s². Evaluation uses the acceleration mean and lane argmax. The ego follows policy commands with automatic braking, signal compliance, and lane-change safety gates disabled. Commands are applied within the available lanes and physical action range.</p>
 <h3>From BC to Anchored PPO</h3>
 <p>BC minimizes acceleration MSE and class-weighted lane cross-entropy. The PPO actor starts from BC weights and includes a KL anchor to a frozen BC policy (coefficient 0.03). A separate critic receives five initial warm-up iterations. Fine-tuning uses 512 environments across 16 SUMO processes for 100 iterations, collecting 3,276,800 transitions.</p>
 <h3>Event-based Rewards</h3>
@@ -310,7 +313,7 @@
 </tbody>
 </table>
 </div>
-<p>No direct speed or progress reward is used. Full observation definitions and hyperparameters are documented in <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/584919da260bed37cc2bc48a307274393002df7e/docs/ALGORITHM.md" target="_blank" rel="noopener noreferrer">Algorithm</a>.</p>
+<p>Rewards emphasize arrival, safety events, precise stopping, and executed lane changes. The stopping bonus decays exponentially with absolute distance from the target stop position. Full observation definitions and hyperparameters are documented in <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/ALGORITHM.md" target="_blank" rel="noopener noreferrer">Algorithm</a>.</p>
 </div>
 </section>
 
@@ -328,12 +331,12 @@
 <tbody>
 <tr><th scope="row">BC</th><td>90.79%</td><td>6401</td><td>120</td><td>317</td><td>200</td><td>12</td>
 </tr>
-<tr><th scope="row">BC → Anchored PPO (iter 80)</th><td>96.84%</td><td>6827</td><td>89</td><td>20</td><td>103</td><td>11</td>
+<tr><th scope="row">BC → Anchored PPO (iter 60)</th><td>97.21%</td><td>6853</td><td>73</td><td>30</td><td>83</td><td>11</td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>Success improves by <strong>6.04 percentage points</strong> using unrounded rates, while red-light violations fall from <strong>317 to 20</strong>. Collision rate decreases from 1.70% to 1.26%. Mean speed is 7.75 m/s for BC and 7.32 m/s for PPO; the improvement in completion does not imply higher average speed.</p>
+<p>Success improves by <strong>6.41 percentage points</strong> using unrounded rates, while red-light violations fall from <strong>317 to 30</strong>. Collision rate decreases from 1.70% to 1.04%. Mean speed is 7.75 m/s for BC and 7.21 m/s for PPO; under these conditions, PPO combines a lower mean speed with a higher completion success rate.</p>
 <div class="columns">
 <div class="column">
 <figure class="project-figure"><a href="static/images/final3-fig_success.png" target="_blank" rel="noopener noreferrer"><img src="static/images/final3-fig_success.png" alt="Success rate comparison with 95% confidence intervals" loading="lazy"></a>
@@ -347,7 +350,7 @@
 </div>
 </div>
 <h3>Validation-based Checkpoint Selection</h3>
-<p>Checkpoints from iterations 50–100 were evaluated on validation data. Iteration 80 was selected with 96.49% validation success. Iteration 100 achieves 93.38% test success, so the last checkpoint is not automatically the final model. The 1,800-case fixed-route suite overlaps PPO training traffic states and is excluded from the final PPO comparison.</p>
+<p>Checkpoints from iterations 50–100 were evaluated on validation data. Iteration 60 was selected with 96.81% validation success and achieves 97.21% on the test suite, compared with 95.83% for the last checkpoint at iteration 100. Final comparisons use validation and test traffic distinct from training. The 1,800-case fixed-route suite shares training traffic states and serves as an initial BC check.</p>
 <figure class="project-figure"><a href="static/images/final3-fig_validation.png" target="_blank" rel="noopener noreferrer"><img src="static/images/final3-fig_validation.png" alt="Validation success across PPO checkpoints" loading="lazy"></a>
 <figcaption>Model selection using validation success</figcaption>
 </figure>
@@ -357,33 +360,31 @@
 <figcaption>BC and PPO training logs</figcaption>
 </figure>
 </details>
-<p class="source-note">Evaluation records: <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/584919da260bed37cc2bc48a307274393002df7e/results/final/BC/evaluation_diverse_start_lanes/evaluation_summary.json" target="_blank" rel="noopener noreferrer">BC JSON</a> · <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/584919da260bed37cc2bc48a307274393002df7e/results/final/PPO/eval_runs/iter080/evaluation_diverse_start_lanes/evaluation_summary.json" target="_blank" rel="noopener noreferrer">PPO JSON</a> · <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/584919da260bed37cc2bc48a307274393002df7e/results/final/PPO/selection.json" target="_blank" rel="noopener noreferrer">Checkpoint selection</a>
+<p class="source-note">Evaluation records: <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/results/final/BC/evaluation_diverse_start_lanes/evaluation_summary.json" target="_blank" rel="noopener noreferrer">BC JSON</a> · <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/results/final/PPO/eval_runs/iter060/evaluation_diverse_start_lanes/evaluation_summary.json" target="_blank" rel="noopener noreferrer">PPO JSON</a> · <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/results/final/PPO/selection.json" target="_blank" rel="noopener noreferrer">Checkpoint selection</a>
 </p>
 </div>
 </section>
 
 <section class="section" id="dataset">
 <div class="container is-max-desktop content">
-<h2 class="title is-3">Road Driving Dataset</h2>
-<p>BC uses <strong>480,000 IDM trajectories and 98,759,227 state–action pairs</strong>. Krauss, EIDM, and ACC vehicles remain as surrounding traffic; only IDM vehicles provide demonstration labels. Expert observations and policy observations are computed by the same function.</p>
-<div class="table-container">
-<table class="table is-fullwidth">
-<thead>
-<tr><th scope="col">Split</th><th scope="col">Trajectories</th><th scope="col">State–action pairs</th>
-</tr>
-</thead>
-<tbody>
-<tr><th scope="row">Training</th><td>456,000</td><td>93,805,940</td>
-</tr>
-<tr><th scope="row">Validation</th><td>24,000</td><td>4,953,287</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>Each of the 24 routes contributes 19,000 training trajectories and 1,000 validation trajectories. Splits are assigned by simulation run, preventing samples from the same run from crossing the split. NPZ shards contain observations and normalized acceleration/lane-change labels. Lane changes account for about 0.73% of training samples, so a class-weighted loss addresses this imbalance.</p>
-<p>These counts describe the final BC training data documented in final3. The repository includes the manifest, configuration, and SHA-256 list; the NPZ shards themselves are not tracked in Git. The public dataset can be inspected separately on Hugging Face.</p>
-<p><a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/584919da260bed37cc2bc48a307274393002df7e/results/final/BC/dataset/manifest.json" target="_blank" rel="noopener noreferrer">Dataset manifest</a> · <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/584919da260bed37cc2bc48a307274393002df7e/results/final/BC/dataset/SHA256SUMS" target="_blank" rel="noopener noreferrer">SHA-256</a>
-</p><a class="button is-dark is-rounded" href="https://huggingface.co/datasets/skku-av-team7/Nohyeong-AV" target="_blank" rel="noopener noreferrer">View Dataset on Hugging Face</a>
+<h2 class="title is-3">Nohyeong-AV Driving Dataset</h2>
+<p>The public Hugging Face dataset contains <strong>10,000,262 POMDP transitions across 62,457 episodes</strong>, collected by driving the trained PPO policy (iter060) through Nohyeong. It pairs policy observations, actions, and rewards with full simulator vehicle states, signals, and events.</p>
+<p>The release comprises 32 batches, each with NPZ training arrays, full JSONL.GZ records, collection metadata, and SUMO network/route files. Collection uses SUMO 1.27.1, a 0.5-second step, 4,700 vehicles/hour, and a 250-second warm-up, with randomized starting lanes and signal offsets and junction collision checking enabled. The dataset is released under <strong>CC BY 4.0</strong>.</p>
+<ul><li><strong>NPZ:</strong> 52-dimensional observation/next_observation, 2-dimensional action_raw, rewards, termination flags, episode/step indices, and detected vehicle coordinates.</li><li><strong>JSONL.GZ:</strong> full vehicle states, observed and approach-level signals, collision partners, lane changes, and route information.</li><li><strong>Episode identity:</strong> episode indices restart in each batch; use <code>(batch, episode)</code> as the identifier.</li></ul>
+<p>The collection includes 61,304 arrivals (98.15%), 819 collisions, 171 red-light violations, and 163 wrong-lane/ego-loss episodes. These figures describe the <strong>public data collection distribution</strong>; the 7,050-case benchmark above uses a separate evaluation protocol.</p>
+<h3>Download and Use</h3>
+<p>Download the first batch with the Hugging Face CLI, then load its arrays as shown below.</p>
+<pre><code>hf download skku-av-team7/Nohyeong-AV --repo-type dataset \
+  --local-dir nohyeong-av --include "data/batch_0000/*"</code></pre>
+<pre><code>import numpy as np
+
+with np.load("nohyeong-av/data/batch_0000/ppo_0000.npz") as data:
+    observations = data["observation"]
+    actions = data["action_raw"]
+    rewards = data["reward"]</code></pre>
+<p><a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/data_columns_submission.md" target="_blank" rel="noopener noreferrer">Data column reference</a> · <a href="https://huggingface.co/datasets/skku-av-team7/Nohyeong-AV/tree/main/data" target="_blank" rel="noopener noreferrer">Public data files</a></p>
+<a class="button is-dark is-rounded" href="https://huggingface.co/datasets/skku-av-team7/Nohyeong-AV" target="_blank" rel="noopener noreferrer">View Dataset on Hugging Face</a>
+<h3>IDM Demonstrations for Policy Training</h3><p>BC pretraining uses a separate set of 480,000 selected IDM trajectories containing 98,759,227 state–action pairs: 456,000 trajectories/93,805,940 samples for training and 24,000 trajectories/4,953,287 samples for validation. Splits are assigned by simulation run, and a class-weighted loss addresses rare lane changes (about 0.73%). These demonstrations and the public PPO rollouts serve different roles in the project.</p>
 </div>
 </section>
 
@@ -391,9 +392,9 @@
 <div class="container is-max-desktop content">
 <h2 class="title is-3">Limitations and Future Work</h2>
 <ul>
-<li><strong>Training/evaluation mismatch:</strong> junction collision checking is disabled during expert collection and PPO training, but enabled for all headline results. The observation does not explicitly represent every conflicting vehicle inside the junction.</li>
-<li><strong>One site and configuration:</strong> results describe the Nohyeong network, configured demand and signals, and the final seed-0 training run. Transfer to other sites or real roads has not been established.</li>
-<li><strong>Remaining failures:</strong> the selected policy still produces 89 collisions and 20 red-light violations on the test suite. Future work includes richer conflict-vehicle observations and evaluation under additional traffic conditions.</li>
+<li><strong>Training/evaluation mismatch:</strong> junction collision checking is disabled during expert collection and PPO training, but enabled for all headline results. The observation focuses on neighboring and merging traffic, leaving richer representation of junction conflicts as an extension.</li>
+<li><strong>One site and configuration:</strong> results describe the Nohyeong network, configured demand and signals, and the final seed-0 training run. Transfer to other sites and real roads requires further validation.</li>
+<li><strong>Remaining failures:</strong> the selected policy produces 73 collisions and 30 red-light violations on the test suite. Future work includes richer conflict-vehicle observations and evaluation under additional traffic conditions.</li>
 <li><strong>Software sensitivity:</strong> small numerical differences across PyTorch/CUDA builds can change long-horizon rollouts and training. Exact reproduction requires the stage-specific environments in the documentation.</li>
 </ul>
 </div>
@@ -402,11 +403,11 @@
 <section class="section" id="reproducibility">
 <div class="container is-max-desktop content">
 <h2 class="title is-3">Reproducibility and Resources</h2>
-<p>A single script connects suite preparation, expert collection, BC training, PPO fine-tuning, and validation/testing. Saved models, settings, and evaluation records are tracked under <code>results/final/</code> on the final3 branch.</p>
+<p>A single script connects suite preparation, expert collection, BC training, PPO fine-tuning, and validation/testing. Saved models, settings, and evaluation records are tracked under <code>results/final/</code> on the main branch.</p>
 <pre><code>SMOKE=1 bash scripts/reproduce_pipeline.sh
 bash scripts/reproduce_pipeline.sh</code>
 </pre>
-<p><a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/584919da260bed37cc2bc48a307274393002df7e/docs/REPRODUCE.md" target="_blank" rel="noopener noreferrer">Environments and full reproduction commands</a> · <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/584919da260bed37cc2bc48a307274393002df7e/docs/ALGORITHM.md" target="_blank" rel="noopener noreferrer">Algorithm details</a> · <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/584919da260bed37cc2bc48a307274393002df7e/docs/report/report_ko.tex" target="_blank" rel="noopener noreferrer">Report source (LaTeX)</a>
+<p><a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/REPRODUCE.md" target="_blank" rel="noopener noreferrer">Environments and full reproduction commands</a> · <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/ALGORITHM.md" target="_blank" rel="noopener noreferrer">Algorithm details</a> · <a href="https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/report/report_ko.tex" target="_blank" rel="noopener noreferrer">Report source (LaTeX)</a>
 </p>
 </div>
 </section>
@@ -414,7 +415,7 @@ bash scripts/reproduce_pipeline.sh</code>
 <section class="section hero is-light" id="acknowledgments">
 <div class="container is-max-desktop content">
 <h2 class="title is-3">Contributions and Acknowledgments</h2>
-<p>This is a course project for Artificial Intelligence and Control for Autonomous Driving (ICE3052_41) at Sungkyunkwan University. Building on the course SUMO/PPO code, the project develops the Nohyeong environment, IDM expert collection, behavior cloning, Anchored PPO, and separate evaluation suites. Individual author roles will be added.</p>
+<p>This is a course project for Artificial Intelligence and Control for Autonomous Driving (ICE3052_41) at Sungkyunkwan University. Building on the course SUMO/PPO code, the project develops the Nohyeong environment, IDM expert collection, behavior cloning, Anchored PPO, and separate evaluation suites.</p>
 <p>Original course repository: <a href="https://github.com/bmil-ssu/Artificial-Intelligence-and-Control-for-Autonomous-Driving" target="_blank" rel="noopener noreferrer">bmil-ssu</a>.</p>
 </div>
 </section>
