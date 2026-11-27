@@ -475,7 +475,7 @@
 
       <section class="section hero is-light" id="abstract">
         <div class="container is-max-desktop content">
-          <h2 class="title is-3">Abstract</h2>
+          <h2 class="title is-3">Summary</h2>
           <p>
             NORA learns autonomous driving policies in a SUMO reconstruction of Nohyeong, a five-way
             signalized intersection in Jeju. The task combines route completion, signal compliance,
@@ -503,17 +503,16 @@
           </p>
           <ul>
             <li>
-              <strong>Start from demonstrations:</strong> learn from IDM vehicles moving through
-              mixed background traffic.
+              <strong>Behavior Cloning:</strong> learn from IDM vehicles moving through mixed
+              background traffic.
             </li>
             <li>
-              <strong>Fine-tune to reduce failures:</strong> use event rewards and a BC anchor to
-              improve driving while retaining the demonstrated behavior as a reference.
+              <strong>Reinforcement Learning:</strong> use event rewards and a BC anchor to improve
+              driving while retaining the demonstrated behavior as a reference.
             </li>
             <li>
-              <strong>Separate selection from testing:</strong> build validation and test suites
-              with traffic seeds distinct from training, and select the final checkpoint on
-              validation results.
+              <strong>Evaluation:</strong> build validation and test suites with traffic seeds
+              distinct from training, and select the final checkpoint on validation results.
             </li>
           </ul>
         </div>
@@ -2942,14 +2941,6 @@ with np.load("nohyeong-av/data/batch_0000/ppo_0000.npz") as data:
             rel="noopener noreferrer"
             >View Dataset on Hugging Face</a
           >
-          <h3>IDM Demonstrations for Policy Training</h3>
-          <p>
-            BC pretraining uses a separate set of 480,000 selected IDM trajectories containing
-            98,759,227 state–action pairs: 456,000 trajectories/93,805,940 samples for training and
-            24,000 trajectories/4,953,287 samples for validation. Splits are assigned by simulation
-            run, and a class-weighted loss addresses rare lane changes (about 0.73%). These
-            demonstrations and the public PPO rollouts serve different roles in the project.
-          </p>
         </div>
       </section>
 

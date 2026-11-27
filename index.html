@@ -462,7 +462,7 @@
 
       <section class="section hero is-light" id="abstract">
         <div class="container is-max-desktop content">
-          <h2 class="title is-3">초록</h2>
+          <h2 class="title is-3">요약</h2>
           <p>
             NORA는 제주 노형오거리를 재현한 SUMO 환경에서 자율주행 차량이 주어진 경로를 완주하도록
             학습하는 프로젝트입니다. 24개 경로와 다양한 출발 차선에서 신호 준수, 차선 선택, 주변
@@ -486,15 +486,14 @@
           </p>
           <ul>
             <li>
-              <strong>전문가에서 출발:</strong> 혼합 교통 속 IDM 차량의 주행을 모방학습으로
-              익힙니다.
+              <strong>모방학습:</strong> 혼합 교통 속 IDM 차량의 주행을 모방학습으로 익힙니다.
             </li>
             <li>
-              <strong>실패를 줄이는 미세 조정:</strong> BC 정책을 기준으로 학습 방향을 유지하는
-              anchor를 두고, 도착·충돌·신호 위반 등 사건 보상으로 PPO를 학습합니다.
+              <strong>강화학습:</strong> BC 정책을 기준으로 학습 방향을 유지하는 anchor를 두고,
+              도착·충돌·신호 위반 등 사건 보상으로 PPO를 학습합니다.
             </li>
             <li>
-              <strong>분리된 평가:</strong> 학습과 다른 교통 seed로 검증·테스트 세트를 만들고, 검증
+              <strong>모델 평가:</strong> 학습과 다른 교통 seed로 검증·테스트 세트를 만들고, 검증
               결과로 최종 모델을 선택합니다.
             </li>
           </ul>
@@ -2904,14 +2903,6 @@ with np.load("nohyeong-av/data/batch_0000/ppo_0000.npz") as data:
             rel="noopener noreferrer"
             >Hugging Face에서 데이터셋 보기</a
           >
-          <h3>정책 학습에 사용한 IDM 전문가 데이터</h3>
-          <p>
-            BC 사전학습에는 별도로 선별한 IDM 궤적 48만 개, 상태–행동 쌍 98,759,227개를
-            사용했습니다. 학습은 456,000개 궤적·93,805,940개 표본, 검증은 24,000개 궤적·4,953,287개
-            표본으로 나눴습니다. 시뮬레이션 실행 단위로 분할하고, 드문 차선변경(약 0.73%)은 클래스
-            가중 손실로 보정했습니다. 이 전문가 데이터는 위 공개 PPO 주행 기록과 수집 주체·용도가
-            다릅니다.
-          </p>
         </div>
       </section>
 
