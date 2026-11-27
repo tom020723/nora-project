@@ -748,38 +748,56 @@
             </table>
           </div>
           <p>
-            BC → PPO의 성공률은 BC보다 6.41%p 높습니다(반올림 전 값 기준). 적색 신호 위반은 317건에서
-            30건으로, 충돌은 120건(1.70%)에서 73건(1.04%)으로 줄었습니다. 평균 속도는 BC 7.75 m/s,
-            BC → PPO 7.21 m/s입니다.
+            BC → PPO의 성공률은 BC보다 6.41%p 높습니다(반올림 전 값 기준). 적색 신호 위반은
+            317건에서 30건으로, 충돌은 120건(1.70%)에서 73건(1.04%)으로 줄었습니다. 평균 속도는 BC
+            7.75 m/s, BC → PPO 7.21 m/s입니다.
           </p>
           <figure class="project-figure">
-            <a href="static/images/final3-outcomes-bc-vs-ppo.png" target="_blank" rel="noopener noreferrer"
-              ><img src="static/images/final3-outcomes-bc-vs-ppo.png" alt="Outcome shares of BC and BC to PPO over 7,050 test cases" loading="lazy"
+            <a
+              href="static/images/final3-outcomes-bc-vs-ppo.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="static/images/final3-outcomes-bc-vs-ppo.png"
+                alt="Outcome shares of BC and BC to PPO over 7,050 test cases"
+                loading="lazy"
             /></a>
             <figcaption>BC와 BC → PPO의 결과별 건수와 비율 (테스트 7,050건)</figcaption>
           </figure>
           <h3>(1) 일반화된 경로 완주 능력</h3>
           <p>
             94개 경로·출발 차선 조합마다 75건씩 평가해 조합별 완주율을 구했습니다. BC → PPO는 77개
-            조합에서 95% 이상, 28개 조합에서 100%를 완주했고, 가장 낮은 조합은 82.7%였습니다. BC는 95%
-            이상인 조합이 34개, 최저가 69.3%였습니다.
+            조합에서 95% 이상, 28개 조합에서 100%를 완주했고, 가장 낮은 조합은 82.7%였습니다. BC는
+            95% 이상인 조합이 34개, 최저가 69.3%였습니다.
           </p>
           <figure class="project-figure">
-            <a href="static/images/final3-route-completion-hist.png" target="_blank" rel="noopener noreferrer"
-              ><img src="static/images/final3-route-completion-hist.png" alt="Histogram of completion rates over the 94 route and start-lane combinations" loading="lazy"
+            <a
+              href="static/images/final3-route-completion-hist.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="static/images/final3-route-completion-hist.png"
+                alt="Histogram of completion rates over the 94 route and start-lane combinations"
+                loading="lazy"
             /></a>
             <figcaption>94개 경로·출발 차선 조합의 완주율 분포</figcaption>
           </figure>
           <h3>(2) 신호 대기 시 자연스러운 정지 거리</h3>
           <p>
-            적색 신호에서 멈춘 위치를 정지선 앞에 선 경우와 멈춘 앞차 뒤에 선 경우로 나눠 비교했습니다.
-            IDM 전문가는 정지선 1 m 앞, 앞차 뒤 2 m에 섭니다. 중앙값은 BC가 0.81 m와 1.77 m, BC → PPO가
-            0.89 m와 1.91 m로, BC → PPO가 전문가의 간격에 더 가깝습니다. PPO의 정지 보너스는 이 목표
-            위치와의 거리 e에 대해 0.01·exp(−|e|)로 줍니다.
+            적색 신호에서 멈춘 위치를 정지선 앞에 선 경우와 멈춘 앞차 뒤에 선 경우로 나눠
+            비교했습니다. IDM 전문가는 정지선 1 m 앞, 앞차 뒤 2 m에 섭니다. 중앙값은 BC가 0.81 m와
+            1.77 m, BC → PPO가 0.89 m와 1.91 m로, BC → PPO가 전문가의 간격에 더 가깝습니다. PPO의
+            정지 보너스는 이 목표 위치와의 거리 e에 대해 0.01·exp(−|e|)로 줍니다.
           </p>
           <figure class="project-figure">
-            <a href="static/images/final3-red-wait-clearance.png" target="_blank" rel="noopener noreferrer"
-              ><img src="static/images/final3-red-wait-clearance.png" alt="Stop position while waiting at a red light for IDM, BC, and BC to PPO" loading="lazy"
+            <a
+              href="static/images/final3-red-wait-clearance.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="static/images/final3-red-wait-clearance.png"
+                alt="Stop position while waiting at a red light for IDM, BC, and BC to PPO"
+                loading="lazy"
             /></a>
             <figcaption>적색 신호 대기 시 정지 위치 (상자: 25–75%, 점선: 정지 목표)</figcaption>
           </figure>
@@ -889,26 +907,28 @@ with np.load("nohyeong-av/data/batch_0000/ppo_0000.npz") as data:
 
       <section class="section hero is-light" id="limitations">
         <div class="container is-max-desktop content">
-          <h2 class="title is-3">한계 및 향후 계획</h2>
+          <h2 class="title is-3">보완할 점</h2>
           <ul>
             <li>
-              <strong>학습과 평가의 차이:</strong> 전문가 수집과 PPO 학습은 교차로 내부 충돌을 검사하지 않고, 본문의 평가는
-              검사합니다. 관측에는 교차로 안에서 경로가 겹치는 차량이 없어서, 최종 모델의 충돌 73건 중
-              40건이 교차로 안에서 납니다. 다음 단계로 이 상충 차량을 관측에 넣습니다.
+              <strong>교차로 내부 충돌:</strong> 전문가 수집과 PPO 학습은 교차로 내부 충돌을
+              검사하지 않고, 본문의 평가는 검사합니다. 관측에는 교차로 안에서 경로가 겹치는 차량이
+              없어서, 최종 모델의 충돌 73건 중 40건이 교차로 안에서 납니다. 다음 단계로 이 상충
+              차량을 관측에 넣습니다.
             </li>
             <li>
-              <strong>단일 지역·설정:</strong> 모든 결과는 노형오거리 한 곳, 배경 교통 4,700대/시간, 120초 신호, 학습 seed 0에서
-              얻었습니다. 다른 교차로와 실제 도로에는 아직 적용하지 않았습니다.
+              <strong>실험 범위:</strong> 모든 결과는 노형오거리 한 곳, 배경 교통 4,700대/시간,
+              120초 신호, 학습 seed 0에서 얻었습니다. 다른 교차로와 실제 도로에는 아직 적용하지
+              않았습니다.
             </li>
             <li>
-              <strong>남아 있는 실패:</strong> 최종 테스트에서 충돌 73건, 적색 신호 위반 30건, 잘못된 차선 83건이 남았습니다.
-              가장 약한 경로는 A1 → A5(90.4%)로, A1 진입로의 2·3번 차선에서 A5로 가는 연결이 없는 도로
-              구조 때문에 차선을 여러 번 바꿔야 합니다.
+              <strong>주행 실패 사례:</strong> 최종 테스트에서 충돌 73건, 적색 신호 위반 30건,
+              잘못된 차선 83건이 남았습니다. 가장 약한 경로는 A1 → A5(90.4%)로, A1 진입로의 2·3번
+              차선에서 A5로 가는 연결이 없는 도로 구조 때문에 차선을 여러 번 바꿔야 합니다.
             </li>
             <li>
-              <strong>재현 환경:</strong> 같은 Python·PyTorch·CUDA 환경에서는 수집부터 테스트까지 바이트 단위로 같은 결과가
-              나옵니다. 빌드가 다르면 GPU 연산의 마지막 자릿수 차이가 학습 중에 커져 PPO가 다른 모델로
-              끝나며, 그 차이는 학습 seed를 바꾼 정도입니다.
+              <strong>실행 환경:</strong> 같은 Python·PyTorch·CUDA 환경에서는 수집부터 테스트까지
+              바이트 단위로 같은 결과가 나옵니다. 빌드가 다르면 GPU 연산의 마지막 자릿수 차이가 학습
+              중에 커져 PPO가 다른 모델로 끝나며, 그 차이는 학습 seed를 바꾼 정도입니다.
             </li>
           </ul>
         </div>

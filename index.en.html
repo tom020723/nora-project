@@ -779,36 +779,61 @@
             speed is 7.75 m/s for BC and 7.21 m/s for BC → PPO.
           </p>
           <figure class="project-figure">
-            <a href="static/images/final3-outcomes-bc-vs-ppo.png" target="_blank" rel="noopener noreferrer"
-              ><img src="static/images/final3-outcomes-bc-vs-ppo.png" alt="Outcome shares of BC and BC to PPO over 7,050 test cases" loading="lazy"
+            <a
+              href="static/images/final3-outcomes-bc-vs-ppo.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="static/images/final3-outcomes-bc-vs-ppo.png"
+                alt="Outcome shares of BC and BC to PPO over 7,050 test cases"
+                loading="lazy"
             /></a>
-            <figcaption>Outcome counts and shares for BC and BC → PPO (7,050 test cases)</figcaption>
+            <figcaption>
+              Outcome counts and shares for BC and BC → PPO (7,050 test cases)
+            </figcaption>
           </figure>
           <h3>(1) Generalized Route Completion</h3>
           <p>
-            We evaluate each of the 94 route/start-lane combinations 75 times and compute its completion
-            rate. BC → PPO completes 77 combinations at 95% or more and 28 at 100%; its lowest
-            combination is at 82.7%. For BC, 34 combinations reach 95% or more and the lowest is 69.3%.
+            We evaluate each of the 94 route/start-lane combinations 75 times and compute its
+            completion rate. BC → PPO completes 77 combinations at 95% or more and 28 at 100%; its
+            lowest combination is at 82.7%. For BC, 34 combinations reach 95% or more and the lowest
+            is 69.3%.
           </p>
           <figure class="project-figure">
-            <a href="static/images/final3-route-completion-hist.png" target="_blank" rel="noopener noreferrer"
-              ><img src="static/images/final3-route-completion-hist.png" alt="Histogram of completion rates over the 94 route and start-lane combinations" loading="lazy"
+            <a
+              href="static/images/final3-route-completion-hist.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="static/images/final3-route-completion-hist.png"
+                alt="Histogram of completion rates over the 94 route and start-lane combinations"
+                loading="lazy"
             /></a>
-            <figcaption>Completion-rate distribution over the 94 route/start-lane combinations</figcaption>
+            <figcaption>
+              Completion-rate distribution over the 94 route/start-lane combinations
+            </figcaption>
           </figure>
           <h3>(2) Natural Stopping Distance at Red Lights</h3>
           <p>
-            We compare where each driver stops at a red light, separately for stops at the stop line and
-            stops behind a queued vehicle. The IDM expert stops 1 m before the stop line and 2 m behind the
-            leader. The medians are 0.81 m and 1.77 m for BC and 0.89 m and 1.91 m for BC → PPO, so
-            BC → PPO is closer to the expert's gaps. PPO receives a stop bonus of 0.01·exp(−|e|), where e
-            is the distance from this target position.
+            We compare where each driver stops at a red light, separately for stops at the stop line
+            and stops behind a queued vehicle. The IDM expert stops 1 m before the stop line and 2 m
+            behind the leader. The medians are 0.81 m and 1.77 m for BC and 0.89 m and 1.91 m for BC
+            → PPO, so BC → PPO is closer to the expert's gaps. PPO receives a stop bonus of
+            0.01·exp(−|e|), where e is the distance from this target position.
           </p>
           <figure class="project-figure">
-            <a href="static/images/final3-red-wait-clearance.png" target="_blank" rel="noopener noreferrer"
-              ><img src="static/images/final3-red-wait-clearance.png" alt="Stop position while waiting at a red light for IDM, BC, and BC to PPO" loading="lazy"
+            <a
+              href="static/images/final3-red-wait-clearance.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="static/images/final3-red-wait-clearance.png"
+                alt="Stop position while waiting at a red light for IDM, BC, and BC to PPO"
+                loading="lazy"
             /></a>
-            <figcaption>Stop position while waiting at a red light (box: 25–75%, dotted line: stop target)</figcaption>
+            <figcaption>
+              Stop position while waiting at a red light (box: 25–75%, dotted line: stop target)
+            </figcaption>
           </figure>
           <p class="source-note">
             Evaluation records:
@@ -920,29 +945,31 @@ with np.load("nohyeong-av/data/batch_0000/ppo_0000.npz") as data:
 
       <section class="section hero is-light" id="limitations">
         <div class="container is-max-desktop content">
-          <h2 class="title is-3">Limitations and Future Work</h2>
+          <h2 class="title is-3">Areas to Improve</h2>
           <ul>
             <li>
-              <strong>Training/evaluation mismatch:</strong> junction collision checking is off during expert collection and
-              PPO training and on for every reported evaluation. The observation does not include vehicles whose
-              paths cross inside the junction, and 40 of the final model's 73 collisions happen there. The next
-              step is to add these conflicting vehicles to the observation.
+              <strong>Collisions inside the junction:</strong> junction collision checking is off
+              during expert collection and PPO training and on for every reported evaluation. The
+              observation does not include vehicles whose paths cross inside the junction, and 40 of
+              the final model's 73 collisions happen there. The next step is to add these
+              conflicting vehicles to the observation.
             </li>
             <li>
-              <strong>One site and configuration:</strong> all results come from the Nohyeong junction with 4,700 veh/h of
-              background traffic, the 120 s signal plan, and training seed 0. We have not applied the policy to
-              other junctions or real roads.
+              <strong>Test conditions:</strong> all results come from the Nohyeong junction with
+              4,700 veh/h of background traffic, the 120 s signal plan, and training seed 0. We have
+              not applied the policy to other junctions or real roads.
             </li>
             <li>
-              <strong>Remaining failures:</strong> the final model still has 73 collisions, 30 red-light violations, and 83
-              wrong-lane endings on the test suite. The weakest route is A1 → A5 (90.4%): lanes 2 and 3 of the A1
-              approach have no connection to A5, so the car must change lanes several times.
+              <strong>Driving failures:</strong> the final model still has 73 collisions, 30
+              red-light violations, and 83 wrong-lane endings on the test suite. The weakest route
+              is A1 → A5 (90.4%): lanes 2 and 3 of the A1 approach have no connection to A5, so the
+              car must change lanes several times.
             </li>
             <li>
-              <strong>Software sensitivity:</strong> in the same Python/PyTorch/CUDA environment, every stage from collection
-              to testing reproduces byte for byte. With a different build, last-digit differences in GPU arithmetic
-              grow during training and PPO ends at a different model, by about as much as changing the training
-              seed.
+              <strong>Runtime environment:</strong> in the same Python/PyTorch/CUDA environment,
+              every stage from collection to testing reproduces byte for byte. With a different
+              build, last-digit differences in GPU arithmetic grow during training and PPO ends at a
+              different model, by about as much as changing the training seed.
             </li>
           </ul>
         </div>
