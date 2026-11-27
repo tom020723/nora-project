@@ -13,6 +13,14 @@ NOhyeong, Jeju — Reinforcement-learning Autonomous driving in SUMO
 - Both pages share `static/css/index.css`, `static/js/index.js`, and the same media assets under `static/`.
 - GitHub Pages serves `index.html` by default; no redirect or build step is needed.
 
+## HTML formatting
+
+Run `npm ci` once, then `npm run format` to format both HTML pages with Prettier. Use `npm run format:check` to check formatting. Shared rules are in `.prettierrc.json`.
+
+## Interaction section
+
+The original `nora_interaction_section` materials (GIFs, captions, and section markup) were created by [YJK (@kimyoonjai000-bit)](https://github.com/kimyoonjai000-bit). They are integrated into both pages under `id="interactions"`; shared GIFs are stored in `static/images/interactions/`. The temporary source and preview folder was removed after integration.
+
 ## Project resources
 
 - [Code and report (main)](https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/tree/main).

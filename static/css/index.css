@@ -107,6 +107,75 @@
   font-weight: 600;
 }
 
+.interaction-details {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  background: var(--background-primary);
+}
+
+.interaction-details > summary {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  padding: 1.5rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.interaction-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.interaction-details > summary:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+  border-radius: var(--border-radius-lg);
+}
+
+.interaction-details > summary .title {
+  margin: 0;
+}
+
+.interaction-summary-meta {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.interaction-chevron {
+  margin-left: auto;
+}
+
+.interaction-details[open] > summary .interaction-chevron {
+  transform: rotate(180deg);
+}
+
+.interaction-content {
+  padding: 0 1.5rem 0.5rem;
+}
+
+.interaction-content .road-figure {
+  margin: 0 0 1.5rem;
+}
+
+.interaction-content .road-figure figcaption {
+  text-align: left;
+}
+
+@media screen and (max-width: 480px) {
+  .interaction-details > summary {
+    padding: 1rem;
+  }
+
+  .interaction-details > summary .title {
+    font-size: 1.5rem;
+  }
+
+  .interaction-content {
+    padding: 0 1rem 0.5rem;
+  }
+}
+
 .result-caption {
   text-align: left;
   padding-bottom: 0.75rem;
