@@ -24,7 +24,7 @@ The original `nora_interaction_section` materials (GIFs, captions, and section m
 ## Project resources
 
 - [Code and report (main)](https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/tree/main).
-- [Project report PDF](static/pdfs/report_ko.pdf) covers the model, observations, rewards, and results. [Execution guide](https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/REPRODUCE.md) covers training, evaluation, and collection; [data specification](https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/data_columns_submission.md) defines the submitted fields.
+- [Project report PDF](https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/report/report_ko.pdf) covers the model, observations, rewards, and results. [Execution guide](https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/REPRODUCE.md) covers training, evaluation, and collection; [data specification](https://github.com/tom020723/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/data_columns_submission.md) defines the submitted fields.
 - [Nohyeong-AV on Hugging Face](https://huggingface.co/datasets/skku-av-team7/Nohyeong-AV): 10,000,262 PPO transitions, 62,457 episodes, 32 batches; CC BY 4.0.
 - The BC pretraining set contains 98,759,227 IDM state–action pairs. It is separate from the public PPO rollouts.
 - The selected PPO checkpoint is iteration 60: 97.21% success on 7,050 test cases, with junction collisions counted (BC: 90.79%).
